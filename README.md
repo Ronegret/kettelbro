@@ -4,7 +4,7 @@
 
 <a href="https://kettellbro.vercel.app"><img src="https://img.shields.io/badge/🌐_Live_Demo-8B5CF6?style=for-the-badge" /></a>
 
-<a href="https://kettellbro.vercel.app"><img width="85%" src="https://image.thum.io/get/wait/8/width/900/crop/520/noanimate/https://kettellbro.vercel.app" alt="Kettelbro preview" /></a>
+<a href="https://kettellbro.vercel.app"><img width="85%" src="./public/screenshots/hoy-wide.png" alt="Kettelbro preview" /></a>
 
 </div>
 

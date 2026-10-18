@@ -1,0 +1,478 @@
+{
+  "_doc": "Especificación de los personajes 3D de kettellbro. La lee tools/blender/*.py. Metros. Ejes de Blender en reposo: +X = izquierda del personaje, -Y = delante (mira a -Y, que en glTF es +Z), +Z = arriba, origen entre los pies en el suelo. Perfiles de extremidad: [s, radioLateral, radioFrontal, desplazamientoFrontal(+ = hacia delante), material del tramo que empieza en s]. Anillos del torso: [z, semiancho, semifondo, desplazamientoFrontal, material del tramo que empieza en z].",
+  "fondosDeCarta": {
+    "rojo": "#f2432d",
+    "azul": "#2a4de8",
+    "verde": "#00a878",
+    "ambar": "#ffb41f",
+    "rosa": "#ff5fa2",
+    "turquesa": "#4fc9e8"
+  },
+  "bell": {
+    "_doc": "Pesa mediana (16 kg). Origen = centro del puño en el asa; el cuerpo cuelga hacia -Z local; la barra del asa va en X local. Asa oscura y alta con ventana visible y base plana (petición del visor).",
+    "bodyRadius": 0.095,
+    "hang": 0.18,
+    "handleRadius": 0.0145,
+    "handleHalfWidth": 0.062,
+    "handsApart": 0.045,
+    "palette": {
+      "bell": "#f4efe2",
+      "bellHandle": "#21244f"
+    },
+    "flatBase": 0.82
+  },
+  "characters": {
+    "bro": {
+      "nombre": "Bro: hombre atlético y fuerte, calvo con barba cuidada, pendientes y brazos tatuados; camiseta negra ajustada de manga corta, pantalón verde largo y zapatillas.",
+      "height": 1.75,
+      "scale2d": 0.0133,
+      "_scale2d": "metros por unidad del lienzo 2D (rig.ts). Con ella las piernas, el tronco y la cabeza de la 2D miden igual que aquí; los brazos 2D son ~10 cm cortos, por eso los brazos se reorientan por dirección y no por posición.",
+      "skeleton": {
+        "hipZ": 0.951,
+        "hipHalfWidth": 0.085,
+        "thigh": 0.4522,
+        "shin": 0.4256,
+        "ankleZ": 0.0732,
+        "ankleHalfWidth": 0.1,
+        "heel": 0.08,
+        "footToBall": 0.135,
+        "ballToTip": 0.065,
+        "spine": 0.25,
+        "chest": 0.2554,
+        "neck": 0.09,
+        "headCenterAboveNeck": 0.096,
+        "headBone": 0.204,
+        "shoulderHalfWidth": 0.1782,
+        "shoulderDrop": 0.045,
+        "upperArm": 0.32,
+        "foreArm": 0.25,
+        "wristToGrip": 0.075,
+        "hand": 0.1,
+        "restArmDeg": 35,
+        "restElbowDeg": 10,
+        "armRootHalfWidth": 0.214,
+        "armRootForward": 0.03
+      },
+      "palette": {
+        "_contraste": "WCAG y ΔE2000 contra las tintas de las cartas: node tools/blender/palette_report.mjs. Ver docs/PERSONAJES-3D.md.",
+        "skin": "#c4875a",
+        "tattoo": "#21244f",
+        "top": "#0e0f17",
+        "bottoms": "#4d9a26",
+        "shoes": "#f4efe2",
+        "hair": "#4b2f22",
+        "beard": "#4b2f22",
+        "earrings": "#f4efe2",
+        "eyes": "#11122a",
+        "mouth": "#8f1d10",
+        "eyewhite": "#fbf8f0"
+      },
+      "torso": {
+        "_doc": "Torso en V: pecho y espalda amplios (pectorales con proyección), cintura recta de ~0,34 m, trapecio que sube a un cuello robusto (radio 0,074). Camiseta ajustada con cuello y dobladillo en relieve.",
+        "segments": 28,
+        "rings": [
+          [0.835, 0.055, 0.05, 0.0, "bottoms"],
+          [0.875, 0.152, 0.1, 0.0, "bottoms"],
+          [0.912, 0.17, 0.114, -0.008, "bottoms"],
+          [0.935, 0.176, 0.116, -0.006, "top"],
+          [0.944, 0.19, 0.126, -0.004, "top"],
+          [0.975, 0.18, 0.118, 0.0, "top"],
+          [1.02, 0.156, 0.108, 0.006, "top"],
+          [1.1, 0.15, 0.106, 0.01, "top"],
+          [1.18, 0.165, 0.114, 0.018, "top"],
+          [1.25, 0.186, 0.126, 0.028, "top"],
+          [1.32, 0.2, 0.132, 0.032, "top"],
+          [1.385, 0.206, 0.124, 0.026, "top"],
+          [1.43, 0.208, 0.108, 0.012, "top"],
+          [1.462, 0.186, 0.096, 0.002, "top"],
+          [1.486, 0.142, 0.088, -0.004, "top"],
+          [1.499, 0.098, 0.086, 0.0, "top"],
+          [1.505, 0.086, 0.08, 0.004, "skin"],
+          [1.55, 0.079, 0.074, 0.006, "skin"],
+          [1.6, 0.072, 0.068, 0.004, "skin"]
+        ],
+        "bulges": [
+          {
+            "_doc": "pectorales",
+            "side": "front",
+            "z": 1.31,
+            "height": 0.055,
+            "x": 0.078,
+            "width": 0.062,
+            "amount": 0.028
+          },
+          {
+            "_doc": "dorsales",
+            "side": "back",
+            "z": 1.27,
+            "height": 0.09,
+            "x": 0.12,
+            "width": 0.07,
+            "amount": 0.012
+          }
+        ]
+      },
+      "leg": {
+        "_doc": "s = metros desde la articulación de la cadera hacia el tobillo. Pantalón jogger largo, puño elástico dentro de la zapatilla.",
+        "segments": 16,
+        "profile": [
+          [-0.07, 0.03, 0.03, 0.0, "bottoms"],
+          [-0.05, 0.075, 0.077, 0.0, "bottoms"],
+          [0.0, 0.088, 0.096, 0.004, "bottoms"],
+          [0.1, 0.11, 0.112, 0.01, "bottoms"],
+          [0.22, 0.098, 0.102, 0.01, "bottoms"],
+          [0.34, 0.082, 0.086, 0.006, "bottoms"],
+          [0.45, 0.066, 0.068, 0.006, "bottoms"],
+          [0.53, 0.072, 0.076, -0.006, "bottoms"],
+          [0.6, 0.07, 0.074, -0.01, "bottoms"],
+          [0.7, 0.056, 0.058, -0.004, "bottoms"],
+          [0.79, 0.05, 0.052, 0.0, "bottoms"],
+          [0.81, 0.045, 0.047, 0.0, "bottoms"],
+          [0.84, 0.043, 0.045, 0.0, "bottoms"],
+          [0.86, 0.03, 0.03, 0.0, "bottoms"]
+        ]
+      },
+      "arm": {
+        "_doc": "s = metros desde la articulación del hombro (codo en 0,32, muñeca en 0,57). Deltoides de radio 0,076, bíceps de 0,066, antebrazo de 0,056. Manga ajustada (5 mm sobre el brazo) hasta s = 0,15.",
+        "segments": 14,
+        "sleeveEnd": 0.15,
+        "profile": [
+          [-0.03, 0.045, 0.045, 0.0, "top"],
+          [-0.015, 0.066, 0.066, 0.0, "top"],
+          [0.0, 0.076, 0.076, 0.0, "top"],
+          [0.05, 0.075, 0.078, 0.002, "top"],
+          [0.11, 0.071, 0.075, 0.006, "top"],
+          [0.15, 0.07, 0.074, 0.007, "top"],
+          [0.1515, 0.064, 0.068, 0.007, "skin"],
+          [0.2, 0.066, 0.071, 0.01, "skin"],
+          [0.26, 0.06, 0.064, 0.007, "skin"],
+          [0.32, 0.05, 0.05, 0.0, "skin"],
+          [0.37, 0.056, 0.053, 0.0, "skin"],
+          [0.43, 0.052, 0.046, 0.0, "skin"],
+          [0.5, 0.042, 0.034, 0.0, "skin"],
+          [0.57, 0.036, 0.028, 0.0, "skin"],
+          [0.585, 0.03, 0.024, 0.0, "skin"]
+        ]
+      },
+      "hand": {
+        "_doc": "Puño estilizado (siempre cerrado, sirve para agarrar el asa): bloque redondeado alrededor del punto de agarre + pulgar.",
+        "length": 0.115,
+        "width": 0.104,
+        "thickness": 0.06,
+        "thumb": [0.0145, 0.055]
+      },
+      "head": {
+        "_doc": "Cráneo calvo: esfera deformada (radios lateral, frontal, vertical; chinDrop = radio vertical de la mitad inferior) con mandíbula cuadrada. Centro = punto 'head' de la 2D.",
+        "radii": [0.084, 0.1, 0.108],
+        "back": 0.008,
+        "jawWidth": 0.9,
+        "chinForward": 0.012,
+        "segments": [24, 16],
+        "chinDrop": 0.127
+      },
+      "features": {
+        "calvo": "Cabeza sin pelo: el cráneo es material 'skin'. Las cejas usan el material 'hair' (dos barras gruesas).",
+        "barba": {
+          "_doc": "Barba completa recortada: capa sobre la mandíbula, mejillas y mentón (todo lo que queda por debajo de la línea de los pómulos y por delante de las orejas), 13 mm de grosor, 22 mm en el mentón; bigote unido. Material 'beard'.",
+          "cheekLine": -0.012,
+          "behindEar": 0.03,
+          "thickness": 0.013,
+          "chinThickness": 0.022
+        },
+        "pendientes": {
+          "_doc": "Aros en los dos lóbulos: toro de radio 13 mm y sección 3,5 mm, colgando 1 cm bajo el lóbulo. Material 'earrings'.",
+          "ringRadius": 0.013,
+          "tubeRadius": 0.0035
+        },
+        "tatuajes": {
+          "_doc": "Geometría pegada a la piel (3 mm por fuera) en los dos brazos: bajo la manga, una banda tribal en zigzag; en el antebrazo, dos bandas lisas con una fila de rombos entre ellas (brazo derecho) o una estrella de 5 puntas (brazo izquierdo). Material 'tattoo'.",
+          "offset": 0.003,
+          "estilo": "brazos"
+        },
+        "camiseta": "Camiseta negra (material 'top'): del dobladillo en la cadera (z 0,952, con un pequeño vuelo que tapa la cintura del pantalón) al cuello redondo (z 1,5), y mangas cortas hasta s = 0,15 con dobladillo.",
+        "pantalon": "Pantalón verde largo tipo jogger (material 'bottoms'): de la pelvis (bajo la camiseta) a los tobillos; el puño entra en la zapatilla.",
+        "zapatillas": {
+          "_doc": "Zapatilla blanca (material 'shoes') con suela negra (material 'top'): caja redondeada de 0,27 m de largo, 0,1 de ancho; talón 0,08 detrás del tobillo, puntera 0,2 delante.",
+          "length": 0.285,
+          "width": 0.102,
+          "collarZ": 0.125,
+          "toeZ": 0.065,
+          "sole": 0.022,
+          "soleMaterial": "top"
+        },
+        "cejas": {
+          "material": "hair",
+          "phi": 22,
+          "psi": 13.5,
+          "width": 0.034,
+          "thick": 0.0045,
+          "arch": 0.0016,
+          "slope": -0.02,
+          "_doc": "Cejas relajadas: tira plana pegada a la frente, algo arqueada, sin inclinación de enfado."
+        },
+        "ojos": {
+          "phi": 21,
+          "psi": 3,
+          "w": 0.024,
+          "h": 0.0135,
+          "iris": 0.0066,
+          "lid": 0.0024,
+          "tilt": 0,
+          "_doc": "Esclerótica (eyewhite), iris oscuro grande (eyes), brillo blanco y párpado superior marcado."
+        },
+        "boca": {
+          "psi": -33,
+          "width": 0.04,
+          "smile": 0.0035,
+          "lower": 0.006,
+          "upper": 0.0,
+          "_doc": "Sonrisa leve sobre la barba."
+        },
+        "nariz": {
+          "bridge": [5, 0.004],
+          "tip": [-12, 0.026],
+          "base": [-18, 0.012],
+          "wing": [12, -17]
+        }
+      },
+      "minArmAbduction": 13
+    },
+    "princess": {
+      "nombre": "Princess: mujer delgada con curvas, pelo rojo rizado recogido en coleta alta; top blanco ajustado con ribetes beige, mallas beige y zapatillas claras.",
+      "height": 1.65,
+      "scale2d": 0.01254,
+      "_scale2d": "1,65 / 1,75 de la escala de bro: la 2D usa los mismos huesos para las dos figuras.",
+      "skeleton": {
+        "hipZ": 0.8966,
+        "hipHalfWidth": 0.0828,
+        "thigh": 0.4264,
+        "shin": 0.4013,
+        "ankleZ": 0.069,
+        "ankleHalfWidth": 0.09,
+        "heel": 0.072,
+        "footToBall": 0.12,
+        "ballToTip": 0.06,
+        "spine": 0.235,
+        "chest": 0.2415,
+        "neck": 0.085,
+        "headCenterAboveNeck": 0.0906,
+        "headBone": 0.19,
+        "shoulderHalfWidth": 0.143,
+        "armRootHalfWidth": 0.152,
+        "armRootForward": 0.016,
+        "shoulderDrop": 0.04,
+        "upperArm": 0.295,
+        "foreArm": 0.235,
+        "wristToGrip": 0.068,
+        "hand": 0.09,
+        "restArmDeg": 35,
+        "restElbowDeg": 10
+      },
+      "palette": {
+        "_contraste": "WCAG y ΔE2000 contra las tintas de las cartas: node tools/blender/palette_report.mjs. Ver docs/PERSONAJES-3D.md.",
+        "skin": "#e7a98e",
+        "tattoo": "#21244f",
+        "top": "#fbf8f0",
+        "bottoms": "#a8784f",
+        "shoes": "#fbf8f0",
+        "hair": "#962a1c",
+        "beard": "#962a1c",
+        "earrings": "#f4efe2",
+        "eyes": "#11122a",
+        "mouth": "#b8433a",
+        "eyewhite": "#fbf8f0",
+        "blush": "#f08c8c"
+      },
+      "torso": {
+        "_doc": "Hombros estrechos (~0,37 m), cuello fino y largo, pecho (volúmenes), cintura de ~0,25 m y caderas de ~0,36 m. Top ajustado hasta la cintura alta, mallas de talle alto.",
+        "segments": 28,
+        "rings": [
+          [0.755, 0.075, 0.055, -0.008, "bottoms"],
+          [0.79, 0.15, 0.094, -0.008, "bottoms"],
+          [0.83, 0.174, 0.1, -0.012, "bottoms"],
+          [0.875, 0.18, 0.104, -0.012, "bottoms"],
+          [0.925, 0.168, 0.097, -0.008, "bottoms"],
+          [0.962, 0.145, 0.09, -0.002, "bottoms"],
+          [0.972, 0.14, 0.088, 0.0, "top"],
+          [0.977, 0.145, 0.092, 0.0, "top"],
+          [1.02, 0.12, 0.085, 0.004, "top"],
+          [1.07, 0.115, 0.084, 0.008, "top"],
+          [1.13, 0.124, 0.088, 0.014, "top"],
+          [1.19, 0.128, 0.092, 0.016, "top"],
+          [1.25, 0.128, 0.09, 0.012, "top"],
+          [1.3, 0.13, 0.082, 0.006, "top"],
+          [1.34, 0.14, 0.074, 0.002, "top"],
+          [1.368, 0.11, 0.066, -0.002, "top"],
+          [1.383, 0.074, 0.058, 0.002, "bottoms"],
+          [1.391, 0.054, 0.048, 0.004, "skin"],
+          [1.43, 0.046, 0.045, 0.006, "skin"],
+          [1.47, 0.044, 0.043, 0.004, "skin"]
+        ],
+        "bulges": [
+          {
+            "_doc": "pecho",
+            "side": "front",
+            "z": 1.21,
+            "height": 0.055,
+            "x": 0.058,
+            "width": 0.05,
+            "amount": 0.05
+          },
+          {
+            "_doc": "glúteos: curva ancha y continua con cadera y muslo (abultamiento 0,012; la pelvis envuelve la parte alta del muslo)",
+            "side": "back",
+            "z": 0.872,
+            "height": 0.085,
+            "x": 0.06,
+            "width": 0.095,
+            "amount": 0.012,
+            "falloff": 1.0
+          }
+        ]
+      },
+      "leg": {
+        "_doc": "Mallas largas ajustadas hasta el tobillo (dentro de la zapatilla).",
+        "segments": 16,
+        "profile": [
+          [-0.065, 0.028, 0.028, 0.0, "bottoms"],
+          [-0.045, 0.06, 0.062, 0.0, "bottoms"],
+          [0.0, 0.08, 0.082, -0.002, "bottoms"],
+          [0.08, 0.088, 0.09, 0.0, "bottoms"],
+          [0.18, 0.08, 0.08, 0.004, "bottoms"],
+          [0.3, 0.06, 0.064, 0.004, "bottoms"],
+          [0.4, 0.047, 0.05, 0.004, "bottoms"],
+          [0.46, 0.046, 0.05, 0.0, "bottoms"],
+          [0.53, 0.05, 0.054, -0.008, "bottoms"],
+          [0.62, 0.042, 0.046, -0.006, "bottoms"],
+          [0.72, 0.032, 0.034, 0.0, "bottoms"],
+          [0.78, 0.03, 0.032, 0.0, "bottoms"],
+          [0.8, 0.031, 0.032, 0.0, "bottoms"],
+          [0.82, 0.022, 0.022, 0.0, "bottoms"]
+        ]
+      },
+      "arm": {
+        "_doc": "Manga corta tipo casquillo hasta s = 0,10 con ribete beige.",
+        "segments": 12,
+        "sleeveEnd": 0.09,
+        "profile": [
+          [-0.02, 0.02, 0.02, 0.0, "top"],
+          [-0.008, 0.032, 0.032, 0.0, "top"],
+          [0.0, 0.038, 0.038, 0.0, "top"],
+          [0.04, 0.038, 0.039, 0.0, "top"],
+          [0.075, 0.037, 0.038, 0.0, "top"],
+          [0.08, 0.037, 0.038, 0.0, "bottoms"],
+          [0.09, 0.036, 0.037, 0.0, "bottoms"],
+          [0.0915, 0.0363, 0.0374, 0.0, "skin"],
+          [0.15, 0.0374, 0.0396, 0.003, "skin"],
+          [0.24, 0.033, 0.0341, 0.002, "skin"],
+          [0.295, 0.0286, 0.0297, 0.0, "skin"],
+          [0.34, 0.0319, 0.0308, 0.0, "skin"],
+          [0.41, 0.0286, 0.0253, 0.0, "skin"],
+          [0.49, 0.022, 0.0176, 0.0, "skin"],
+          [0.53, 0.0209, 0.0165, 0.0, "skin"],
+          [0.545, 0.0176, 0.0143, 0.0, "skin"]
+        ]
+      },
+      "hand": {
+        "_doc": "Puño más pequeño.",
+        "length": 0.085,
+        "width": 0.068,
+        "thickness": 0.038,
+        "thumb": [0.0095, 0.04]
+      },
+      "head": {
+        "_doc": "Cráneo más estrecho, mandíbula fina.",
+        "radii": [0.075, 0.09, 0.1],
+        "chinDrop": 0.109,
+        "back": 0.006,
+        "jawWidth": 0.72,
+        "chinForward": 0.005,
+        "segments": [24, 16]
+      },
+      "features": {
+        "pelo": {
+          "_doc": "Pelo rojo rizado recogido: casquete liso y tirante, un tirabuzón en cada sien y dos rizos en C en la frente; coleta alta con dos hebras en hélice que dibujan 6 rizos grandes en cascada (Tail.1-3), atada con goma beige.",
+          "capThickness": 0.011,
+          "hairline": [
+            [0, 0.046],
+            [30, 0.044],
+            [60, 0.032],
+            [80, 0.026],
+            [95, 0.024],
+            [110, 0.0],
+            [135, -0.042],
+            [160, -0.06],
+            [180, -0.064]
+          ],
+          "tie": [180, 36],
+          "tail": [
+            [0.0, 0.5, 0.86, 0.06],
+            [0.0, 0.9, -0.45, 0.09],
+            [0.0, 0.25, -0.97, 0.12]
+          ],
+          "curls": 6,
+          "tendril": [76, 0.02, 0.075],
+          "foreheadCurl": [26, 0.04, 0.03]
+        },
+        "cejas": {
+          "material": "beard",
+          "phi": 23,
+          "psi": 14.5,
+          "width": 0.032,
+          "thick": 0.0026,
+          "arch": 0.0035,
+          "slope": 0.0,
+          "_doc": "Cejas finas y arqueadas con el material 'beard' (color del pelo)."
+        },
+        "ojos": {
+          "phi": 22,
+          "psi": 1,
+          "w": 0.031,
+          "h": 0.022,
+          "iris": 0.0072,
+          "lid": 0.0018,
+          "tilt": 5,
+          "lashes": true
+        },
+        "pendientes": {
+          "_doc": "Aros pequeños en los lóbulos.",
+          "ringRadius": 0.0095,
+          "tubeRadius": 0.0026
+        },
+        "tatuajes": {
+          "_doc": "Una estrella pequeña en la cara externa del antebrazo izquierdo, junto a la muñeca (material 'tattoo').",
+          "estilo": "estrella-muneca",
+          "offset": 0.003
+        },
+        "zapatillas": {
+          "_doc": "Zapatilla clara con suela beige.",
+          "scale": 0.9,
+          "sole": 0.02,
+          "soleMaterial": "bottoms"
+        },
+        "ropa": "Top blanco ajustado (talle hasta z 0,972) con ribetes beige en cuello y mangas; mallas beige cálido de talle alto.",
+        "boca": {
+          "psi": -33,
+          "width": 0.032,
+          "smile": 0.0028,
+          "lower": 0.0065,
+          "upper": 0.0035,
+          "_doc": "Labios definidos con sonrisa amable."
+        },
+        "nariz": {
+          "bridge": [0, 0.002],
+          "tip": [-12, 0.017],
+          "base": [-16, 0.008],
+          "wing": [9, -15]
+        },
+        "rubor": {
+          "phi": 34,
+          "psi": -9,
+          "w": 0.022,
+          "h": 0.012
+        }
+      },
+      "minArmAbduction": 6
+    }
+  }
+}

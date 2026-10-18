@@ -1,0 +1,6 @@
+- generic [active] [ref=f95e1]:
+  - main [ref=f95e2]:
+    - img "Imagen para compartir" [ref=f95e4]
+    - img "Imagen para compartir" [ref=f95e5]
+    - img "Imagen para compartir" [ref=f95e6]
+  - alert [ref=f95e3]

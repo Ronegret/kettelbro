@@ -1,0 +1,39 @@
+{
+  "name": "kettellbro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "kettellbro: entrenador de pesas rusas basado en evidencia, con login de Google y progreso en la nube.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "characters:build": "node tools/blender/run.mjs build",
+    "characters:validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/validate-glb.mjs",
+    "characters:preview": "node tools/blender/run.mjs preview"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5.3.0",
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "firebase": "^13.0.0",
+    "marked": "18.0.14",
+    "motion": "^14.2.0",
+    "next": "^16.4.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "0.186.0",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

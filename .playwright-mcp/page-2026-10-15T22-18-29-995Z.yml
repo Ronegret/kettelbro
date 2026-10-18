@@ -1,0 +1,20 @@
+- generic [active] [ref=f55e1]:
+  - alert [ref=f55e27]
+  - main [ref=f55e156]:
+    - generic [ref=f55e157]:
+      - button "Salir" [ref=f55e158] [cursor=pointer]
+      - progressbar "Progreso" [ref=f55e161]
+    - generic [ref=f55e170]:
+      - generic [ref=f55e171]:
+        - generic [ref=f55e172]:
+          - heading "Antes de empezar" [level=1] [ref=f55e173]
+          - paragraph [ref=f55e174]: Tres preguntas rápidas para entrenarte con seguridad.
+        - img "El Bro, la pesa rusa mascota (idle)" [ref=f55e175]
+      - group "Preguntas de seguridad" [ref=f55e189]:
+        - switch "Siento dolor en el pecho, mareos o falta de aire con esfuerzo leve." [ref=f55e190] [cursor=pointer]
+        - switch "Un profesional de salud me indicó evitar el ejercicio intenso o con pesas." [ref=f55e195] [cursor=pointer]
+        - 'switch "Tengo dolor o molestias en la espalda baja. Adaptamos tus rutinas: sin ejercicios balísticos como el swing." [ref=f55e200] [cursor=pointer]':
+          - generic [ref=f55e201]:
+            - generic [ref=f55e202]: Tengo dolor o molestias en la espalda baja.
+            - generic [ref=f55e203]: "Adaptamos tus rutinas: sin ejercicios balísticos como el swing."
+    - button "Siguiente" [ref=f55e207] [cursor=pointer]

@@ -1,0 +1,22 @@
+- generic [active] [ref=f91e1]:
+  - alert [ref=f91e26]
+  - generic [ref=f91e28]:
+    - heading "Progreso" [level=1] [ref=f91e29]
+    - generic [ref=f91e30]:
+      - img "El Bro, la pesa rusa mascota (sleep)" [ref=f91e31]
+      - paragraph [ref=f91e44]: Aún no hay sesiones
+      - paragraph [ref=f91e45]: Cuando completes tu primera sesión, aquí verás tu volumen, récords e historial.
+  - navigation "Principal" [ref=f91e46]:
+    - list [ref=f91e47]:
+      - listitem [ref=f91e48]:
+        - link [ref=f91e49] [cursor=pointer]:
+          - /url: /hoy
+      - listitem [ref=f91e53]:
+        - link [ref=f91e54] [cursor=pointer]:
+          - /url: /progreso
+      - listitem [ref=f91e58]:
+        - link [ref=f91e59] [cursor=pointer]:
+          - /url: /metas
+      - listitem [ref=f91e63]:
+        - link [ref=f91e64] [cursor=pointer]:
+          - /url: /perfil

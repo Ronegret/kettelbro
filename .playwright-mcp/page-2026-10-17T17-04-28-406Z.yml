@@ -1,0 +1,241 @@
+- generic [active] [ref=f96e1]:
+  - alert [ref=f96e26]
+  - generic [ref=f96e28]:
+    - generic [ref=f96e30]:
+      - generic [ref=f96e31]:
+        - generic [ref=f96e32]:
+          - heading "Hoy empieza tu Día 2" [level=1] [ref=f96e33]
+          - paragraph [ref=f96e34]: Bienvenido, Bro.
+        - button "Racha de 0 días y 0 escudos. Toca para ver cómo funcionan." [ref=f96e35] [cursor=pointer]:
+          - generic [ref=f96e36]: "0"
+          - generic [ref=f96e43]: "0"
+      - generic [ref=f96e45]:
+        - group "Las tarjetas de tu día. Desliza para ver cada ejercicio." [ref=f96e46]:
+          - group "1 de 6" [ref=f96e48]:
+            - generic [ref=f96e49]:
+              - generic [ref=f96e50]:
+                - generic [ref=f96e52]:
+                  - generic "Día 2" [ref=f96e61]: "2"
+                  - generic [ref=f96e62]: Fuerza
+                  - 'img "Figura 3D animada: Peso muerto con pesa rusa" [ref=f96e67]'
+                  - generic [ref=f96e71]: EL PESO MUERTO
+                - generic [ref=f96e80]:
+                  - paragraph [ref=f96e81]: Día 2 · Fuerza
+                  - paragraph [ref=f96e82]: "Cadera atrás y espalda larga: la pesa se levanta sin queja ni carga."
+                  - generic [ref=f96e83]:
+                    - paragraph [ref=f96e84]: Fundación · Acumulación · semana 1 de 4 Esfuerzo objetivo 4,5 de 10
+                    - button [ref=f96e85] [cursor=pointer]: Respaldo científico · 8
+              - 'button "Girar la carta: de dónde sale esta sesión" [ref=f96e88] [cursor=pointer]'
+          - group "2 de 6" [ref=f96e91]:
+            - generic [ref=f96e98]:
+              - heading "Calentamiento" [level=3] [ref=f96e99]
+              - paragraph [ref=f96e100]: Despierta caderas y hombros antes de cargar.
+              - list [ref=f96e101]:
+                - listitem [ref=f96e102]:
+                  - generic [ref=f96e104]:
+                    - generic [ref=f96e105]: Halo
+                    - generic [ref=f96e106]: 5 reps
+                - listitem [ref=f96e107]:
+                  - generic [ref=f96e109]:
+                    - generic [ref=f96e110]: Sentadilla goblet con apertura de cadera
+                    - generic [ref=f96e111]: 40s
+                - listitem [ref=f96e112]:
+                  - generic [ref=f96e114]:
+                    - generic [ref=f96e115]: Peso muerto con pesa
+                    - generic [ref=f96e116]: 5 reps
+              - paragraph [ref=f96e117]: ≈ 3 min
+          - group "3 de 6" [ref=f96e120]:
+            - button "Peso muerto con pesa. 3 × 8, 8 kg. Toca para ver la técnica." [ref=f96e121] [cursor=pointer]:
+              - generic [ref=f96e122]:
+                - generic "Ejercicio 1 de 3" [ref=f96e131]: "1"
+                - generic [ref=f96e132]: Principal
+                - 'img "Figura 3D animada: Peso muerto con pesa rusa" [ref=f96e137]'
+                - generic [ref=f96e141]:
+                  - generic [ref=f96e142]: EL PESO MUERTO
+                  - generic [ref=f96e143]: 3 × 8 · 8 kg
+                - generic [ref=f96e144]: ≈ 7 min
+          - group "4 de 6" [ref=f96e147]:
+            - button "Sentadilla goblet. 2 × 8, 8 kg. Toca para ver la técnica." [ref=f96e148] [cursor=pointer]:
+              - generic [ref=f96e149]:
+                - generic "Ejercicio 2 de 3" [ref=f96e158]: "2"
+                - generic [ref=f96e159]: Complemento
+                - 'img "Figura 3D animada: Sentadilla goblet" [ref=f96e164]'
+                - generic [ref=f96e168]:
+                  - generic [ref=f96e169]: LA SENTADILLA
+                  - generic [ref=f96e170]: 2 × 8 · 8 kg
+                - generic [ref=f96e171]: ≈ 3 min
+          - group "5 de 6" [ref=f96e174]:
+            - button "Acarreo maleta. 2 × 30 s por lado, 8 kg. Toca para ver la técnica." [ref=f96e175] [cursor=pointer]:
+              - generic [ref=f96e176]:
+                - generic "Ejercicio 3 de 3" [ref=f96e185]: "3"
+                - generic [ref=f96e186]: Remate
+                - 'img "Figura 3D animada: Acarreo de maleta" [ref=f96e191]'
+                - generic [ref=f96e195]:
+                  - generic [ref=f96e196]: LA MALETA
+                  - generic [ref=f96e197]: 2 × 30 s por lado · 8 kg
+                - generic [ref=f96e198]: ≈ 3 min
+          - group "6 de 6" [ref=f96e201]:
+            - generic [ref=f96e208]:
+              - heading "Vuelta a la calma" [level=3] [ref=f96e209]
+              - paragraph [ref=f96e210]: Baja las pulsaciones y suelta lo trabajado.
+              - list [ref=f96e211]:
+                - listitem [ref=f96e212]:
+                  - generic [ref=f96e214]:
+                    - generic [ref=f96e215]: Sentadilla goblet con apertura de cadera
+                    - generic [ref=f96e216]: 296s
+              - paragraph [ref=f96e217]: ≈ 5 min
+        - generic [ref=f96e221]:
+          - button "Tarjeta anterior" [disabled] [ref=f96e222] [cursor=pointer]
+          - button "Ir a la tarjeta 1" [ref=f96e225] [cursor=pointer]
+          - button "Ir a la tarjeta 2" [ref=f96e227] [cursor=pointer]
+          - button "Ir a la tarjeta 3" [ref=f96e229] [cursor=pointer]
+          - button "Ir a la tarjeta 4" [ref=f96e231] [cursor=pointer]
+          - button "Ir a la tarjeta 5" [ref=f96e233] [cursor=pointer]
+          - button "Ir a la tarjeta 6" [ref=f96e235] [cursor=pointer]
+          - button "Tarjeta siguiente" [ref=f96e237] [cursor=pointer]
+        - paragraph [ref=f96e240]: Desliza para ver qué te toca →
+      - generic [ref=f96e241]:
+        - paragraph [ref=f96e242]: 3 × 8 · 8 kg · 20 min
+        - paragraph [ref=f96e243]: "Cadera atrás y espalda larga: la pesa se levanta sin queja ni carga."
+      - button "Continuar sesión" [ref=f96e245] [cursor=pointer]
+    - generic [ref=f96e248]:
+      - region [ref=f96e249]:
+        - heading "Por qué hoy toca esto" [level=2] [ref=f96e250]
+        - paragraph [ref=f96e251]: Fundación · Acumulación · semana 1/4 · esfuerzo objetivo 4,5/10
+        - list [ref=f96e252]:
+          - listitem [ref=f96e253]: "Series de volumen moderado al inicio del mesociclo: se acumula trabajo con una carga que deja 3-4 repeticiones en reserva."
+          - listitem [ref=f96e255]: "Día con énfasis de tren inferior: sentadilla y bisagra se alternan para repartir la carga sobre cadera y rodilla."
+          - listitem [ref=f96e257]: "Semana 1 de iniciación (aprende): esfuerzo suave, como máximo 4,5 de 10, y descansos más largos para aprender el movimiento sin agobio."
+          - listitem [ref=f96e259]: "Semana 1 del ciclo (acumulación): se construye base de trabajo con esfuerzo moderado."
+        - button "Respaldo científico · 8 estudios" [ref=f96e261] [cursor=pointer]
+      - region [ref=f96e264]:
+        - heading "Tu rutina" [level=2] [ref=f96e265]
+        - list "Rutina de hoy" [ref=f96e266]:
+          - listitem [ref=f96e267]:
+            - generic [ref=f96e271]:
+              - paragraph [ref=f96e272]:
+                - generic [ref=f96e273]: Halo
+                - generic [ref=f96e274]: 1 min
+              - paragraph [ref=f96e275]: Calentamiento · 5 reps · 8 kg
+          - listitem [ref=f96e276]:
+            - generic [ref=f96e280]:
+              - paragraph [ref=f96e281]:
+                - generic [ref=f96e282]: Sentadilla goblet con apertura de cadera
+                - generic [ref=f96e283]: 1 min
+              - paragraph [ref=f96e284]: Calentamiento · 40s · 8 kg
+          - listitem [ref=f96e285]:
+            - generic [ref=f96e289]:
+              - paragraph [ref=f96e290]:
+                - generic [ref=f96e291]: Peso muerto con pesa
+                - generic [ref=f96e292]: 1 min
+              - paragraph [ref=f96e293]: Calentamiento · 5 reps · 8 kg
+          - listitem [ref=f96e294]:
+            - generic [ref=f96e298]:
+              - paragraph [ref=f96e299]:
+                - generic [ref=f96e300]: Peso muerto con pesa
+                - generic [ref=f96e301]: 7 min
+              - paragraph [ref=f96e302]: Principal · 3 × 8 · 8 kg
+              - paragraph [ref=f96e303]: Easy Strength · P. Tsatsouline
+          - listitem [ref=f96e304]:
+            - generic [ref=f96e308]:
+              - paragraph [ref=f96e309]:
+                - generic [ref=f96e310]: Sentadilla goblet
+                - generic [ref=f96e311]: 3 min
+              - paragraph [ref=f96e312]: Complemento · 2 × 8 · 8 kg
+          - listitem [ref=f96e313]:
+            - generic [ref=f96e317]:
+              - paragraph [ref=f96e318]:
+                - generic [ref=f96e319]: Acarreo maleta
+                - generic [ref=f96e320]: 3 min
+              - paragraph [ref=f96e321]: Remate · 2 × 30 s por lado · 8 kg
+          - listitem [ref=f96e322]:
+            - generic [ref=f96e326]:
+              - paragraph [ref=f96e327]:
+                - generic [ref=f96e328]: Sentadilla goblet con apertura de cadera
+                - generic [ref=f96e329]: 5 min
+              - paragraph [ref=f96e330]: Vuelta a la calma · 296s · 8 kg
+      - region "Tu mes" [ref=f96e331]:
+        - generic [ref=f96e333]:
+          - heading "Tu mes 1" [level=2] [ref=f96e334]
+          - paragraph [ref=f96e335]: Fundación · semana 1 de 4
+        - grid "Días del mesociclo" [ref=f96e336]:
+          - row [ref=f96e337]:
+            - gridcell "Día 1, completado" [ref=f96e338]:
+              - generic [ref=f96e339]: "1"
+            - gridcell "Día 2, hoy" [ref=f96e344]:
+              - generic [ref=f96e345]: "2"
+            - gridcell "Día 3" [ref=f96e346]:
+              - generic [ref=f96e347]: "3"
+            - gridcell "Día 4" [ref=f96e349]:
+              - generic [ref=f96e350]: "4"
+            - gridcell "Día 5" [ref=f96e352]:
+              - generic [ref=f96e353]: "5"
+            - gridcell "Día 6" [ref=f96e355]:
+              - generic [ref=f96e356]: "6"
+            - gridcell "Día 7" [ref=f96e358]:
+              - generic [ref=f96e359]: "7"
+          - row [ref=f96e361]:
+            - gridcell "Día 8" [ref=f96e362]:
+              - generic [ref=f96e363]: "8"
+            - gridcell "Día 9" [ref=f96e365]:
+              - generic [ref=f96e366]: "9"
+            - gridcell "Día 10" [ref=f96e368]:
+              - generic [ref=f96e369]: "10"
+            - gridcell "Día 11" [ref=f96e371]:
+              - generic [ref=f96e372]: "11"
+            - gridcell "Día 12" [ref=f96e374]:
+              - generic [ref=f96e375]: "12"
+            - gridcell "Día 13" [ref=f96e377]:
+              - generic [ref=f96e378]: "13"
+            - gridcell "Día 14" [ref=f96e380]:
+              - generic [ref=f96e381]: "14"
+          - row [ref=f96e383]:
+            - gridcell "Día 15" [ref=f96e384]:
+              - generic [ref=f96e385]: "15"
+            - gridcell "Día 16" [ref=f96e387]:
+              - generic [ref=f96e388]: "16"
+            - gridcell "Día 17" [ref=f96e390]:
+              - generic [ref=f96e391]: "17"
+            - gridcell "Día 18" [ref=f96e393]:
+              - generic [ref=f96e394]: "18"
+            - gridcell "Día 19" [ref=f96e396]:
+              - generic [ref=f96e397]: "19"
+            - gridcell "Día 20" [ref=f96e399]:
+              - generic [ref=f96e400]: "20"
+            - gridcell "Día 21" [ref=f96e402]:
+              - generic [ref=f96e403]: "21"
+          - row [ref=f96e405]:
+            - gridcell "Día 22" [ref=f96e406]:
+              - generic [ref=f96e407]: "22"
+            - gridcell "Día 23" [ref=f96e409]:
+              - generic [ref=f96e410]: "23"
+            - gridcell "Día 24" [ref=f96e412]:
+              - generic [ref=f96e413]: "24"
+            - gridcell "Día 25" [ref=f96e415]:
+              - generic [ref=f96e416]: "25"
+            - gridcell "Día 26" [ref=f96e418]:
+              - generic [ref=f96e419]: "26"
+            - gridcell "Día 27" [ref=f96e421]:
+              - generic [ref=f96e422]: "27"
+            - gridcell "Día 28" [ref=f96e424]:
+              - generic [ref=f96e425]: "28"
+      - region "Rango" [ref=f96e427]:
+        - generic [ref=f96e428]:
+          - heading "Novato" [level=2] [ref=f96e429]
+          - paragraph [ref=f96e430]: 0 / 250 XP
+        - progressbar "Progreso de rango" [ref=f96e431]
+        - paragraph [ref=f96e433]: "Siguiente rango: Aprendiz"
+  - navigation "Principal" [ref=f96e434]:
+    - list [ref=f96e435]:
+      - listitem [ref=f96e436]:
+        - link [ref=f96e437] [cursor=pointer]:
+          - /url: /hoy
+      - listitem [ref=f96e441]:
+        - link [ref=f96e442] [cursor=pointer]:
+          - /url: /progreso
+      - listitem [ref=f96e446]:
+        - link [ref=f96e447] [cursor=pointer]:
+          - /url: /metas
+      - listitem [ref=f96e451]:
+        - link [ref=f96e452] [cursor=pointer]:
+          - /url: /perfil

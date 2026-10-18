@@ -1,0 +1,13 @@
+- generic [active] [ref=f57e1]:
+  - main [ref=f57e2]:
+    - paragraph [ref=f57e3]: bro · fase 0.6 · 300px · 4 ejercicios
+    - generic [ref=f57e4]:
+      - figure "Swing a dos manos" [ref=f57e5]:
+        - 'img "Figura 3D animada: Swing a dos manos" [ref=f57e7]'
+      - figure "Molino" [ref=f57e11]:
+        - 'img "Figura 3D animada: Molino" [ref=f57e13]'
+      - figure "Halo" [ref=f57e17]:
+        - 'img "Figura 3D animada: Halo" [ref=f57e19]'
+      - figure "Ochos entre las piernas" [ref=f57e23]:
+        - 'img "Figura 3D animada: Ochos entre las piernas" [ref=f57e25]'
+  - alert [ref=f57e29]

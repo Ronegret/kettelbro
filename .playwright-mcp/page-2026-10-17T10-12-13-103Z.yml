@@ -1,0 +1,17 @@
+- generic [active] [ref=f51e1]:
+  - main [ref=f51e2]:
+    - paragraph [ref=f51e3]: princess · fase 0.4 · 300px · 6 ejercicios
+    - generic [ref=f51e4]:
+      - figure "Puente de glúteo" [ref=f51e5]:
+        - 'img "Figura 3D animada: Puente de glúteo" [ref=f51e7]'
+      - figure "Press en el suelo" [ref=f51e11]:
+        - 'img "Figura 3D animada: Press en el suelo" [ref=f51e13]'
+      - figure "Levantamiento turco" [ref=f51e17]:
+        - 'img "Figura 3D animada: Levantamiento turco" [ref=f51e19]'
+      - figure "Halo" [ref=f51e23]:
+        - 'img "Figura 3D animada: Halo" [ref=f51e25]'
+      - figure "Arm bar" [ref=f51e29]:
+        - 'img "Figura 3D animada: Arm bar" [ref=f51e31]'
+      - figure "Acarreo de maleta" [ref=f51e35]:
+        - 'img "Figura 3D animada: Acarreo de maleta" [ref=f51e37]'
+  - alert [ref=f51e41]

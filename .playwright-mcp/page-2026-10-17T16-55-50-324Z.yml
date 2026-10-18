@@ -1,0 +1,10 @@
+- generic [active] [ref=f94e1]:
+  - main [ref=f94e2]
+  - generic [ref=f94e8] [cursor=pointer]:
+    - button "Open issues overlay" [ref=f94e9]:
+      - generic [ref=f94e13]:
+        - generic [aria-hidden] [ref=f94e14]: "0"
+        - generic [ref=f94e15]: "1"
+      - generic [ref=f94e16]: Issue
+    - button "Collapse issues badge" [ref=f94e17]
+  - alert [ref=f94e20]

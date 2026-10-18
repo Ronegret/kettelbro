@@ -1,0 +1,222 @@
+rules_version = '2';
+
+// ─────────────────────────────────────────────────────────────────────────────────────────
+// kettellbro: reglas de seguridad de Cloud Firestore.
+//
+// Principios:
+//  1. Todo cuelga de users/{uid}. Solo el dueño (request.auth.uid == uid) lee y escribe.
+//  2. El historial es INMUTABLE: sesiones y metas solo se CREAN (nunca update/delete).
+//  3. Se valida lo crítico (tipos y rangos razonables), no cada campo futuro: se exigen los campos
+//     necesarios (hasAll) pero no se prohíben los extra, para poder evolucionar el esquema
+//     (schemaVersion) sin romper escrituras en clientes antiguos.
+//  4. Todo lo que no esté explícitamente permitido queda DENEGADO (última regla).
+//
+// Despliegue:  firebase deploy --only firestore:rules,firestore:indexes
+// ─────────────────────────────────────────────────────────────────────────────────────────
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ───────────────────────── Helpers genéricos ─────────────────────────
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    function isStringMax(v, max) {
+      return v is string && v.size() <= max;
+    }
+    function isOptionalString(v, max) {
+      return v == null || isStringMax(v, max);
+    }
+    function isIntInRange(v, lo, hi) {
+      return v is int && v >= lo && v <= hi;
+    }
+    function isNumInRange(v, lo, hi) {
+      return v is number && v >= lo && v <= hi;
+    }
+    // Fecha local YYYY-MM-DD
+    function isDateString(v) {
+      return v is string && v.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$');
+    }
+
+    // ───────────────────────── Validadores de documentos ─────────────────────────
+
+    // users/{uid}
+    function validProfile(d) {
+      return d.keys().hasAll(['displayName', 'email', 'photoURL', 'createdAt', 'lastLoginAt', 'schemaVersion'])
+        && isStringMax(d.displayName, 200)
+        && isOptionalString(d.email, 320)
+        && isOptionalString(d.photoURL, 2048)
+        && d.createdAt is int
+        && d.lastLoginAt is int
+        && isIntInRange(d.schemaVersion, 1, 1000);
+    }
+
+    // Una pesa de la lista: número entre 2 y 64 kg. Si el índice no existe, se da por válida.
+    function bellOk(bells, i) {
+      return bells.size() <= i || isNumInRange(bells[i], 2, 64);
+    }
+    // Las reglas no tienen bucles: se comprueban los 12 primeros elementos (y se limita el tamaño a 12).
+    function validBells(bells) {
+      return bells is list
+        && bells.size() >= 1 && bells.size() <= 12
+        && bellOk(bells, 0) && bellOk(bells, 1) && bellOk(bells, 2) && bellOk(bells, 3)
+        && bellOk(bells, 4) && bellOk(bells, 5) && bellOk(bells, 6) && bellOk(bells, 7)
+        && bellOk(bells, 8) && bellOk(bells, 9) && bellOk(bells, 10) && bellOk(bells, 11);
+    }
+
+    // users/{uid}/meta/settings
+    function validBody(d) {
+      // El cuerpo es opcional: estatura 120-230 cm y hasta 150 pesajes.
+      return !d.keys().hasAny(['body'])
+        || (d.body is map
+            && d.body.heightCm is number && d.body.heightCm >= 120 && d.body.heightCm <= 230
+            && d.body.weights is list && d.body.weights.size() <= 150);
+    }
+
+    function validSettings(d) {
+      return d.keys().hasAll(['level', 'primaryGoal', 'minutes', 'bells', 'referenceKg', 'voice', 'sound', 'haptics', 'onboardedAt'])
+        && d.level in ['novice', 'intermediate', 'advanced']
+        && d.primaryGoal in ['balanced', 'strength', 'power', 'endurance']
+        && d.minutes in [10, 15, 20, 25]
+        && validBody(d)
+        && validBells(d.bells)
+        && isNumInRange(d.referenceKg, 2, 64)
+        && d.voice is bool
+        && d.sound is bool
+        && d.haptics is bool
+        && (d.onboardedAt == null || d.onboardedAt is int);
+    }
+
+    function validTotals(t) {
+      return t is map
+        && t.keys().hasAll(['sessions', 'restDays', 'reps', 'tonnageKg', 'minutes'])
+        && isNumInRange(t.sessions, 0, 1000000)
+        && isNumInRange(t.restDays, 0, 1000000)
+        && isNumInRange(t.reps, 0, 1000000000)
+        && isNumInRange(t.tonnageKg, 0, 1000000000)
+        && isNumInRange(t.minutes, 0, 100000000);
+    }
+
+    // users/{uid}/meta/program  (estado de progresión; documento único)
+    function validProgram(d) {
+      return d.keys().hasAll(['schemaVersion', 'dayIndex', 'startedAt', 'lastSessionDate', 'streak', 'bestStreak', 'shields', 'xp', 'totals', 'memory', 'lastRpe', 'lastFeel'])
+        && d.schemaVersion is int
+        && isIntInRange(d.dayIndex, 1, 100000)
+        && d.startedAt is int
+        && (d.lastSessionDate == null || isDateString(d.lastSessionDate))
+        && isIntInRange(d.streak, 0, 100000)
+        && isIntInRange(d.bestStreak, 0, 100000)
+        && isIntInRange(d.shields, 0, 5)
+        && isNumInRange(d.xp, 0, 1000000000)
+        && validTotals(d.totals)
+        && d.memory is map && d.memory.size() <= 64
+        && (d.lastRpe == null || isNumInRange(d.lastRpe, 0, 10))
+        && (d.lastFeel == null || d.lastFeel in [1, 2, 3]);
+    }
+
+    // users/{uid}/meta/draft  (sesión en curso; el plan completo viaja dentro)
+    function validDraft(d) {
+      return d.keys().hasAll(['plan', 'startedAt', 'stepIndex', 'sets', 'updatedAt'])
+        && d.plan is map
+        && d.startedAt is int
+        && isIntInRange(d.stepIndex, 0, 2000)
+        && d.sets is list && d.sets.size() <= 500
+        && d.updatedAt is int;
+    }
+
+    // users/{uid}/sessions/{sessionId}  (el id del documento debe coincidir con el campo id)
+    function validSession(d, sessionId) {
+      return d.keys().hasAll(['id', 'dayIndex', 'date', 'focus', 'title', 'phase', 'mesocycle', 'startedAt', 'endedAt', 'durationSec', 'rpe', 'feel', 'sets', 'totalReps', 'tonnageKg', 'xpEarned'])
+        && d.id == sessionId
+        && isIntInRange(d.dayIndex, 1, 100000)
+        && isDateString(d.date)
+        && d.focus in ['power', 'strength', 'endurance', 'hybrid', 'skill', 'recovery']
+        && isStringMax(d.title, 120)
+        && d.phase in ['accumulate', 'build', 'peak', 'deload']
+        && isIntInRange(d.mesocycle, 1, 10000)
+        && d.startedAt is int
+        && d.endedAt is int && d.endedAt >= d.startedAt
+        && isNumInRange(d.durationSec, 0, 86400)
+        && isNumInRange(d.rpe, 0, 10)
+        && d.feel in [1, 2, 3]
+        && d.sets is list && d.sets.size() <= 500
+        && isNumInRange(d.totalReps, 0, 100000)
+        && isNumInRange(d.tonnageKg, 0, 10000000)
+        && isNumInRange(d.xpEarned, 0, 100000)
+        && (!d.keys().hasAny(['restDay']) || d.restDay is bool);
+    }
+
+    // users/{uid}/records/{exerciseId}
+    function validRecord(d, exerciseId) {
+      return d.keys().hasAll(['exerciseId', 'bellKg', 'reps', 'dayIndex', 'date'])
+        && d.exerciseId == exerciseId
+        && exerciseId.size() <= 40 && exerciseId.matches('^[a-z0-9-]+$')
+        && d.bellKg is number && d.bellKg > 0 && d.bellKg <= 200
+        && isIntInRange(d.reps, 1, 100000)
+        && isIntInRange(d.dayIndex, 1, 100000)
+        && isDateString(d.date);
+    }
+
+    // users/{uid}/goals/{goalId}
+    function validGoal(d, goalId) {
+      return d.keys().hasAll(['id', 'completedAt'])
+        && d.id == goalId
+        && goalId.size() <= 64
+        && d.completedAt is int;
+    }
+
+    // ───────────────────────── Colecciones ─────────────────────────
+
+    match /users/{uid} {
+      // Perfil. No se lista la colección de usuarios ni se borra el perfil desde el cliente.
+      allow get: if isOwner(uid);
+      allow create: if isOwner(uid) && validProfile(request.resource.data);
+      allow update: if isOwner(uid)
+        && validProfile(request.resource.data)
+        && request.resource.data.createdAt == resource.data.createdAt;
+
+      // Ajustes del usuario
+      match /meta/settings {
+        allow get: if isOwner(uid);
+        allow create, update: if isOwner(uid) && validSettings(request.resource.data);
+      }
+
+      // Estado del programa: SÍ se actualiza (cada sesión completada lo reemplaza)
+      match /meta/program {
+        allow get: if isOwner(uid);
+        allow create, update: if isOwner(uid) && validProgram(request.resource.data);
+      }
+
+      // Borrador de sesión en curso: se reescribe tras cada paso y se borra al terminar
+      match /meta/draft {
+        allow get: if isOwner(uid);
+        allow create, update: if isOwner(uid) && validDraft(request.resource.data);
+        allow delete: if isOwner(uid);
+      }
+
+      // Historial de sesiones: INMUTABLE (solo create). Sin update ni delete.
+      match /sessions/{sessionId} {
+        allow get, list: if isOwner(uid);
+        allow create: if isOwner(uid) && validSession(request.resource.data, sessionId);
+      }
+
+      // Récords personales: se actualizan cuando se superan.
+      match /records/{exerciseId} {
+        allow get, list: if isOwner(uid);
+        allow create, update: if isOwner(uid) && validRecord(request.resource.data, exerciseId);
+      }
+
+      // Metas completadas: INMUTABLES (solo create).
+      match /goals/{goalId} {
+        allow get, list: if isOwner(uid);
+        allow create: if isOwner(uid) && validGoal(request.resource.data, goalId);
+      }
+    }
+
+    // Denegar todo lo demás (explícito, aunque Firestore ya deniega por defecto).
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

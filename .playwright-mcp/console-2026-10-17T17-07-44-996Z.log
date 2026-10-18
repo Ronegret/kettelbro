@@ -1,0 +1,7 @@
+[     241ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://kettellbro.vercel.app/:0
+[   91509ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.closed call. @ https://kettellbro.vercel.app/_next/static/immutable/chunks/38k37d_jhc1as.js:0
+[   91509ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.closed call. @ https://kettellbro.vercel.app/_next/static/immutable/chunks/38k37d_jhc1as.js:0
+[  105536ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.closed call. @ https://kettellbro.vercel.app/_next/static/immutable/chunks/38k37d_jhc1as.js:0
+[  105536ms] [ERROR] Cross-Origin-Opener-Policy policy would block the window.closed call. @ https://kettellbro.vercel.app/_next/static/immutable/chunks/38k37d_jhc1as.js:0
+[  106805ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://kettellbro.vercel.app/hoy:0
+[  118173ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://kettellbro.vercel.app/sesion:0

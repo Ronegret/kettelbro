@@ -1,0 +1,40 @@
+- generic [active] [ref=f64e1]:
+  - alert [ref=f64e27]
+  - main [ref=f64e443]:
+    - generic [ref=f64e444]:
+      - button "Salir de la sesión" [ref=f64e445] [cursor=pointer]
+      - progressbar "Avance de la sesión" [ref=f64e448]
+      - button "Silenciar" [ref=f64e457] [cursor=pointer]
+    - paragraph [ref=f64e460]:
+      - generic [ref=f64e461]: Bloque 1 de 7 · calentamiento
+      - generic [ref=f64e462]: Quedan 19:48
+    - generic [ref=f64e483]:
+      - generic [ref=f64e484]:
+        - 'img "Figura 3D animada: Halo" [ref=f64e486]'
+        - radiogroup "Ángulo de la figura" [ref=f64e491]:
+          - radio "Ver de lado" [ref=f64e492] [cursor=pointer]: Lado
+          - radio "Ver de frente" [checked] [ref=f64e493] [cursor=pointer]: Frente
+          - radio "Ver en tres cuartos" [ref=f64e494] [cursor=pointer]: 3/4
+          - radio "Alternar las vistas automáticamente" [ref=f64e495] [cursor=pointer]: Auto
+      - list [aria-hidden] [ref=f64e496]:
+        - listitem [ref=f64e497]:
+          - generic [ref=f64e498]: "1"
+          - generic [ref=f64e499]: Pesa al pecho
+        - listitem [ref=f64e500]:
+          - generic [ref=f64e501]: "2"
+        - listitem [ref=f64e502]:
+          - generic [ref=f64e503]: "3"
+      - heading "5 HALOS" [level=1] [ref=f64e504]
+      - paragraph [ref=f64e505]: 8 kg
+      - paragraph [ref=f64e506]:
+        - generic [ref=f64e507]: "2"
+        - generic [ref=f64e508]: de 5
+      - paragraph [ref=f64e510]: 0:23
+      - paragraph [ref=f64e513]: Rodea la cabeza cerca, sin inclinarte
+    - generic [ref=f64e473]:
+      - button "Pausa" [ref=f64e474] [cursor=pointer]
+      - generic [ref=f64e477]:
+        - button "Técnica" [ref=f64e478] [cursor=pointer]
+        - generic [ref=f64e481]:
+          - button "+10 s" [ref=f64e514] [cursor=pointer]
+          - button "Saltar" [ref=f64e482] [cursor=pointer]

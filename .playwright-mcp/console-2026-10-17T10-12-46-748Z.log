@@ -1,0 +1,900 @@
+[      85ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[      97ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[     257ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ http://localhost:3000/dev/legibilidad?char=princess&phase=0.4&size=300&only=hip-bridge,floor-press,arm-bar,turkish-get-up,halo,suitcase-carry,two-hand-swing,goblet-squat:0
+[     596ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ http://localhost:3000/dev/legibilidad?char=princess&phase=0.4&size=300&only=hip-bridge,floor-press,arm-bar,turkish-get-up,halo,suitcase-carry,two-hand-swing,goblet-squat:0
+[   51906ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   51908ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   51991ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   52004ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   52058ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ http://localhost:3000/dev/legibilidad?char=princess&phase=0.4&size=300&only=hip-bridge,floor-press,arm-bar,turkish-get-up,halo,suitcase-carry,two-hand-swing,goblet-squat:0
+[   52368ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52368ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52369ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52369ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52370ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52370ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52370ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52371ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:904:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   52464ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ http://localhost:3000/dev/legibilidad?char=princess&phase=0.4&size=300&only=hip-bridge,floor-press,arm-bar,turkish-get-up,halo,suitcase-carry,two-hand-swing,goblet-squat:0
+[   59469ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59523ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59580ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59634ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59695ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59751ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59803ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59804ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59805ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59805ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59805ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59806ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59806ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59807ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   59832ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59896ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59948ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   59997ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60046ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60099ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60150ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60219ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60268ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60339ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60393ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60452ms] [LOG] [Fast Refresh] done in 9ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60504ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60556ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60616ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60688ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60751ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60815ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60831ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60832ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60832ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60833ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60833ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60833ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60834ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60834ms] [ERROR] %o
+
+%s ReferenceError: Box3 is not defined
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js?id=%255Bproject%255D/src/components/figure3d/assets.ts+%255Bapp-client%255D+(ecmascript):189:14)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:213:168)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:18:172)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_01nlzdq_77ijb._.js:1514:47)
+    at http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1625:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1955:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1623:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1940:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:1923:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js:474:20)
+    at http://localhost:3000/_next/static/chunks/src_components_figure3d_Figure3DCanvas_tsx_1bxyyo3zsbdfv._.js:11:16 The above error occurred in the <Lazy> component. It was handled by the <Guard> error boundary. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js:17245
+[   60895ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60943ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   60991ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61041ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61093ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61145ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61193ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61244ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61307ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61363ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61427ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61490ms] [LOG] [Fast Refresh] done in 12ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61570ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61591ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61647ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61701ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61759ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61807ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   61860ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62001ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62048ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62111ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62160ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62209ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62258ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62324ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62383ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62431ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62490ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62539ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62591ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62640ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62700ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62752ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62800ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62856ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62904ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   62953ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63002ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63058ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63108ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63162ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63211ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63267ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63324ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63378ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63433ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63482ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63567ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63624ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63679ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63729ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63794ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63844ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63897ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   63962ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64020ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64069ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64125ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64181ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64236ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64300ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64364ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64427ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64480ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64543ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64603ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64654ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64724ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64786ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64842ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64906ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   64973ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65036ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65100ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65150ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65207ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65260ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65321ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65369ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65432ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65484ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65533ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65588ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65646ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65706ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65755ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65818ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65866ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65920ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[   65980ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719

@@ -1,0 +1,187 @@
+- generic [active] [ref=f100e1]:
+  - main [ref=f100e2]:
+    - generic [ref=f100e3]:
+      - link "Saltar al contenido" [ref=f100e4] [cursor=pointer]:
+        - /url: "#contenido"
+      - generic [ref=f100e5]:
+        - generic [ref=f100e6]:
+          - generic "kettellbro" [ref=f100e7]: KETTELLBRO
+          - button "Entrar" [ref=f100e10] [cursor=pointer]
+        - generic [ref=f100e11]:
+          - generic [ref=f100e12]:
+            - 'heading "Tu entrenador de pesa rusa (kettlebell): una sesión nueva cada día" [level=1] [ref=f100e13]'
+            - paragraph [ref=f100e14]: Rutinas de kettlebell de 10 a 25 minutos con respaldo en estudios y un acompañante que te guía serie por serie. Entra con Google y tu historial te espera en cualquier teléfono.
+            - button "Continuar con Google" [ref=f100e17] [cursor=pointer]
+            - paragraph [ref=f100e23]: "Solo con Google: sin contraseñas y con tu progreso en cualquier teléfono."
+            - link "Ver cómo funciona" [ref=f100e24] [cursor=pointer]:
+              - /url: "#como-funciona"
+            - list [ref=f100e25]:
+              - listitem [ref=f100e26]: Sesiones de 10, 15, 20 o 25 minutos exactos
+              - listitem [ref=f100e28]: Cada bloque cita su respaldo, con sus límites
+              - listitem [ref=f100e30]: Se instala como app, sin tienda
+          - 'img "Tres tarjetas de ejemplo: Potencia, Fuerza y Resistencia" [ref=f100e33]':
+            - generic [ref=f100e35]:
+              - generic "Día 22" [ref=f100e44]: "22"
+              - generic [ref=f100e45]: Fuerza
+              - generic [ref=f100e55]: EL GET-UP
+            - generic [ref=f100e58]:
+              - generic "Día 9" [ref=f100e67]: "9"
+              - generic [ref=f100e68]: Resistencia
+              - generic [ref=f100e78]: EL RELOJ
+            - generic [ref=f100e81]:
+              - generic "Día 1" [ref=f100e90]: "1"
+              - generic [ref=f100e91]: Potencia
+              - img "El Bro, la pesa rusa mascota (hype)" [ref=f100e97]
+              - generic [ref=f100e113]: EL BRO
+      - region [ref=f100e115]:
+        - generic [ref=f100e116]:
+          - heading "Cómo funciona" [level=2] [ref=f100e117]
+          - paragraph [ref=f100e118]: Cuatro pasos y estás entrenando.
+          - list [ref=f100e119]:
+            - listitem [ref=f100e120]:
+              - generic [aria-hidden] [ref=f100e121]: "1"
+              - generic [ref=f100e122]:
+                - heading "Entra con Google" [level=3] [ref=f100e123]
+                - paragraph [ref=f100e124]: "Un toque y listo: sin contraseñas que recordar. Tu cuenta guarda tu historial para que lo encuentres igual en cualquier teléfono."
+            - listitem [ref=f100e125]:
+              - generic [aria-hidden] [ref=f100e126]: "2"
+              - generic [ref=f100e127]:
+                - heading "Cuéntanos de ti" [level=3] [ref=f100e128]
+                - paragraph [ref=f100e129]: "Tu nivel, tu meta, cuánto tiempo tienes (10, 15, 20 o 25 minutos) y qué pesas rusas hay en tu casa. Si quieres, también tu estatura y tu peso, para sugerirte una pesa de partida. Antes de entrenar te hacemos unas preguntas de salud: si marcas señales de alarma, te pedimos consultar a un profesional."
+            - listitem [ref=f100e130]:
+              - generic [aria-hidden] [ref=f100e131]: "3"
+              - generic [ref=f100e132]:
+                - heading "Recibe tu sesión del día" [level=3] [ref=f100e133]
+                - paragraph [ref=f100e134]: "Cada día sale una sesión con tu rutina: calentamiento, bloques de trabajo y vuelta a la calma, armada para el tiempo que elegiste y solo con las pesas que tienes. Puedes ver por qué te toca cada bloque y qué estudio lo respalda."
+            - listitem [ref=f100e135]:
+              - generic [aria-hidden] [ref=f100e136]: "4"
+              - generic [ref=f100e137]:
+                - heading "Entrena con tu acompañante" [level=3] [ref=f100e138]
+                - paragraph [ref=f100e139]: "La pantalla te guía por cada serie, descanso y repetición, con cuenta regresiva y reloj. No hay botón de «ya terminé»: la app lleva el tiempo y tú solo levantas. Al terminar nos cuentas qué tan duro fue, y la app ajusta el día siguiente."
+      - region [ref=f100e140]:
+        - generic [ref=f100e141]:
+          - heading "Por qué es distinto" [level=2] [ref=f100e142]
+          - list [ref=f100e143]:
+            - listitem [ref=f100e144]:
+              - heading "Cada día, una sesión distinta" [level=3] [ref=f100e145]
+              - paragraph [ref=f100e146]: "En vez de una lista infinita de rutinas, recibes una sesión por día, y el mes es un plan que se va marcando día a día. Tu rutina no es aleatoria: se genera con reglas fijas a partir de tu día de programa, rota los ejercicios sin repetirlos de golpe y cambia de enfoque (fuerza, potencia, resistencia, técnica y recuperación)."
+            - listitem [ref=f100e147]:
+              - heading "Ciencia verificada, con sus límites" [level=3] [ref=f100e148]
+              - paragraph [ref=f100e149]: "Más de 70 referencias revisadas una por una contra PubMed, su DOI o la fuente original. Cada bloque de tu rutina puede mostrar su respaldo y su nivel de evidencia (de A a D). Y lo que la evidencia no sostiene, no lo prometemos: ni quema de grasa garantizada ni «tonificar»."
+            - listitem [ref=f100e150]:
+              - heading "Un acompañante en cada serie" [level=3] [ref=f100e151]
+              - paragraph [ref=f100e152]: Texto y botones grandes para leer a distancia, cuenta regresiva antes de cada serie, repeticiones contadas por el reloj y cronómetro de descansos. Voz, sonido y vibración son opcionales. Si cierras la app a mitad de la sesión, retomas donde la dejaste.
+            - listitem [ref=f100e153]:
+              - heading "Sesiones de 10 a 25 minutos" [level=3] [ref=f100e154]
+              - paragraph [ref=f100e155]: "Tú eliges 10, 15, 20 o 25 minutos y la sesión dura exactamente eso, con el calentamiento y las preparaciones incluidos: si dice 20, son 20. Es una decisión de diseño con respaldo indirecto: en un meta-análisis de entrenamiento de fuerza en general, una sola serie por ejercicio, de una a tres veces por semana, se asoció con aumentos de fuerza en hombres entrenados."
+            - listitem [ref=f100e156]:
+              - heading "Tu historial viaja contigo" [level=3] [ref=f100e157]
+              - paragraph [ref=f100e158]: "Entras con tu cuenta de Google y encuentras tus pesos, repeticiones, récords y rachas tal cual los dejaste, en cualquier teléfono. Si no entrenas por unos días, no pierdes bloques ni te castigamos: el programa avanza cuando completas tu sesión."
+      - region [ref=f100e159]:
+        - generic [ref=f100e160]:
+          - heading "La ciencia sin humo" [level=2] [ref=f100e161]
+          - paragraph [ref=f100e162]: "Nos tomamos en serio lo que se sabe y lo que no. Estas cuatro frases salen de estudios concretos, con sus límites. Y recuerda: la evidencia específica de pesa rusa es todavía pequeña."
+          - list [ref=f100e163]:
+            - listitem [ref=f100e164]:
+              - paragraph [ref=f100e165]: En un ensayo con 21 hombres sanos, seis semanas de swings con pesa rusa, dos días por semana, se asociaron con mejoras en la fuerza de piernas (media sentadilla) y en el salto vertical. No hubo grupo inactivo, así que parte de la mejora puede deberse al aprendizaje.
+              - paragraph [ref=f100e166]:
+                - generic [ref=f100e167]: Nivel B
+                - link "Lake y Lauder, 2012 · J Strength Cond Res" [ref=f100e168] [cursor=pointer]:
+                  - /url: https://pubmed.ncbi.nlm.nih.gov/22580981/
+                - generic [ref=f100e169]: Ensayo aleatorizado con dos grupos activos (n = 21)
+            - listitem [ref=f100e170]:
+              - paragraph [ref=f100e171]: A igual esfuerzo percibido, correr en cinta exigió entre un 25 y un 39 % más de consumo de oxígeno que 10 minutos de swings (13 personas). La pesa rusa puede ser un buen ejercicio cardiovascular, pero no hay evidencia de que sea mejor que correr.
+              - paragraph [ref=f100e172]:
+                - generic [ref=f100e173]: Nivel C
+                - link "Hulsey y cols., 2012 · J Strength Cond Res" [ref=f100e174] [cursor=pointer]:
+                  - /url: https://pubmed.ncbi.nlm.nih.gov/22395274/
+                - generic [ref=f100e175]: Estudio cruzado de laboratorio (n = 13)
+            - listitem [ref=f100e176]:
+              - paragraph [ref=f100e177]: En un meta-análisis de 6 estudios con hombres entrenados, una sola serie por ejercicio, de una a tres veces por semana, aumentó la fuerza máxima. Es evidencia de entrenamiento de fuerza en general, no específica de pesa rusa.
+              - paragraph [ref=f100e178]:
+                - generic [ref=f100e179]: Nivel A
+                - link "Androulakis-Korakakis y cols., 2020 · Sports Med" [ref=f100e180] [cursor=pointer]:
+                  - /url: https://pubmed.ncbi.nlm.nih.gov/31797219/
+                - generic [ref=f100e181]: Revisión sistemática con meta-análisis (6 estudios)
+            - listitem [ref=f100e182]:
+              - paragraph [ref=f100e183]: Una revisión de 99 publicaciones concluyó que los efectos del entrenamiento con pesa rusa son típicamente de triviales a pequeños y que la confianza en esos resultados es de baja a muy baja. Por eso verás «puede» y «en estudios pequeños» en vez de promesas.
+              - paragraph [ref=f100e184]:
+                - generic [ref=f100e185]: Nivel D
+                - link "Meigh y cols., 2019 · BMC Sports Sci Med Rehabil" [ref=f100e186] [cursor=pointer]:
+                  - /url: https://pubmed.ncbi.nlm.nih.gov/31497302/
+                - generic [ref=f100e187]: Revisión de alcance (99 publicaciones)
+          - paragraph [ref=f100e188]: "A: meta-análisis o posición oficial sobre entrenamiento de fuerza en general. B: ensayo controlado con pesa rusa. C: laboratorio agudo, biomecánica o EMG. D: consenso de expertos, encuesta o caso clínico."
+          - generic [ref=f100e189]:
+            - heading "Lo que no prometemos" [level=3] [ref=f100e190]
+            - list [ref=f100e191]:
+              - listitem [ref=f100e192]: Quemar grasa o «tonificar» zonas del cuerpo.
+              - listitem [ref=f100e194]: Que la pesa rusa queme más que correr o reemplace al gimnasio.
+              - listitem [ref=f100e196]: Curar o proteger la espalda.
+              - listitem [ref=f100e198]: "Cifras exactas de calorías: un MET es un promedio, no tu caso."
+          - link "Ver todas las referencias" [ref=f100e200] [cursor=pointer]:
+            - /url: /ciencia
+      - region [ref=f100e201]:
+        - generic [ref=f100e202]:
+          - heading "Preguntas frecuentes" [level=2] [ref=f100e203]
+          - generic [ref=f100e204]:
+            - group [ref=f100e205]:
+              - generic "¿Qué pesas necesito?" [ref=f100e206] [cursor=pointer]:
+                - text: ¿Qué pesas necesito?
+                - generic [aria-hidden] [ref=f100e207]: +
+            - group [ref=f100e208]:
+              - generic "¿Sirve si nunca he usado pesa rusa?" [ref=f100e209] [cursor=pointer]:
+                - text: ¿Sirve si nunca he usado pesa rusa?
+                - generic [aria-hidden] [ref=f100e210]: +
+            - group [ref=f100e211]:
+              - generic "¿Es seguro para la espalda?" [ref=f100e212] [cursor=pointer]:
+                - text: ¿Es seguro para la espalda?
+                - generic [aria-hidden] [ref=f100e213]: +
+            - group [ref=f100e214]:
+              - generic "¿Por qué solo con Google?" [ref=f100e215] [cursor=pointer]:
+                - text: ¿Por qué solo con Google?
+                - generic [aria-hidden] [ref=f100e216]: +
+            - group [ref=f100e217]:
+              - generic "¿Cómo la instalo?" [ref=f100e218] [cursor=pointer]:
+                - text: ¿Cómo la instalo?
+                - generic [aria-hidden] [ref=f100e219]: +
+      - region [ref=f100e220]:
+        - generic [ref=f100e221]:
+          - heading "Instala kettellbro en tu teléfono" [level=2] [ref=f100e222]
+          - paragraph [ref=f100e223]: Se instala como una app más, sin tienda y sin ocupar casi espacio. Así la abres con un toque, a pantalla completa.
+          - generic [ref=f100e224]:
+            - generic [ref=f100e225]:
+              - heading "En Android (Chrome)" [level=3] [ref=f100e226]
+              - list [ref=f100e227]:
+                - listitem [ref=f100e228]: Abre kettellbro.vercel.app en Chrome.
+                - listitem [ref=f100e229]: Toca el menú de los tres puntos, arriba a la derecha.
+                - listitem [ref=f100e230]: Elige «Instalar app» o «Agregar a la pantalla principal». El nombre cambia según tu versión de Chrome y tu idioma.
+                - listitem [ref=f100e231]: Confirma con «Instalar» o «Agregar».
+                - listitem [ref=f100e232]: Abre kettellbro desde el ícono nuevo de tu pantalla de inicio y entra con Google.
+              - paragraph [ref=f100e233]: Si no ves ninguna de las dos opciones, recarga la página o actualiza Chrome.
+            - generic [ref=f100e234]:
+              - heading "En iPhone (Safari)" [level=3] [ref=f100e235]
+              - list [ref=f100e236]:
+                - listitem [ref=f100e237]: Abre kettellbro.vercel.app en Safari.
+                - listitem [ref=f100e238]: Toca el botón Compartir (el cuadrado con una flecha hacia arriba).
+                - listitem [ref=f100e239]: Desliza y elige «Agregar a pantalla de inicio». En algunos idiomas aparece como «Añadir a pantalla de inicio».
+                - listitem [ref=f100e240]: Si ves el interruptor «Abrir como app web», déjalo activado para que se abra a pantalla completa.
+                - listitem [ref=f100e241]: Toca «Agregar».
+                - listitem [ref=f100e242]: Abre el ícono nuevo y entra con Google.
+              - paragraph [ref=f100e243]: Instálala desde Safari. Desde otros navegadores las opciones pueden variar.
+          - group [ref=f100e244]:
+            - generic "En computador (Chrome)" [ref=f100e245] [cursor=pointer]
+      - region [ref=f100e246]:
+        - generic [ref=f100e247]:
+          - heading "Tu primera sesión te espera" [level=2] [ref=f100e248]
+          - paragraph [ref=f100e249]: Entra con Google, cuéntanos cuánto tiempo tienes y qué pesas hay en casa, y empieza hoy con una rutina armada para ti.
+          - button "Continuar con Google" [ref=f100e252] [cursor=pointer]
+          - paragraph [ref=f100e258]: Sin contraseñas. Tu historial te espera en cualquier teléfono.
+      - generic [ref=f100e260]:
+        - paragraph [ref=f100e261]: kettellbro no sustituye el consejo médico. Si tienes una condición de salud, una lesión o dudas, consulta a un profesional antes de entrenar. Detente ante dolor agudo, hormigueo, mareo o dolor en el pecho.
+        - navigation "Más páginas" [ref=f100e262]:
+          - link "Guías" [ref=f100e263] [cursor=pointer]:
+            - /url: /guias
+          - link "La ciencia" [ref=f100e264] [cursor=pointer]:
+            - /url: /ciencia
+        - paragraph [ref=f100e265]: kettellbro · Una sesión nueva cada día.
+  - alert [ref=f100e266]

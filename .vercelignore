@@ -1,0 +1,15 @@
+# Con este archivo Vercel deja de leer .gitignore: se repiten aquí las exclusiones de seguridad.
+.env*
+node_modules
+.next
+.next-check
+.vercel
+.firebase
+*.tsbuildinfo
+firebase-debug.log
+
+# Carpetas de trabajo que no hacen falta para construir la app
+.playwright-mcp
+.impeccable
+art
+tools

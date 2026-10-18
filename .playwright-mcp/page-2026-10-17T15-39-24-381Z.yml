@@ -1,0 +1,37 @@
+- generic [ref=f71e1]:
+  - alert [ref=f71e27]
+  - main [ref=f71e28]:
+    - generic [ref=f71e29]:
+      - button "Salir de la sesión" [ref=f71e30] [cursor=pointer]
+      - progressbar "Avance de la sesión" [ref=f71e33]
+      - button "Silenciar" [ref=f71e48] [cursor=pointer]
+    - paragraph [ref=f71e51]:
+      - generic [ref=f71e52]: Bloque 7 de 7 · vuelta a la calma
+      - generic [ref=f71e53]: Quedan 4:56
+    - generic [ref=f71e54]:
+      - generic [ref=f71e55]:
+        - 'img "Figura 3D animada: Sentadilla goblet con palanca" [ref=f71e57]'
+        - radiogroup "Ángulo de la figura" [ref=f71e62]:
+          - radio "Ver de lado" [ref=f71e63] [cursor=pointer]: Lado
+          - radio "Ver de frente" [checked] [ref=f71e64] [cursor=pointer]: Frente
+          - radio "Ver en tres cuartos" [ref=f71e65] [cursor=pointer]: 3/4
+          - radio "Alternar las vistas automáticamente" [ref=f71e66] [cursor=pointer]: Auto
+        - list [aria-hidden] [ref=f71e68]:
+          - listitem [ref=f71e69]:
+            - generic [ref=f71e70]: "1"
+          - listitem [ref=f71e71]:
+            - generic [ref=f71e72]: "2"
+            - generic [ref=f71e94]: Abre con los codos
+          - listitem [ref=f71e73]:
+            - generic [ref=f71e74]: "3"
+      - heading "APERTURAS EN CUCLILLAS" [level=1] [ref=f71e75]
+      - paragraph [ref=f71e76]: 8 kg · 296 s
+      - paragraph [ref=f71e78]: 4:56
+      - paragraph [ref=f71e81]: Abajo, pesa al pecho
+    - generic [ref=f71e83]:
+      - button "Pausa" [active] [ref=f71e96] [cursor=pointer]
+      - generic [ref=f71e87]:
+        - button "Técnica" [ref=f71e88] [cursor=pointer]
+        - generic [ref=f71e91]:
+          - button "+10 s" [ref=f71e92] [cursor=pointer]
+          - button "Saltar" [ref=f71e93] [cursor=pointer]

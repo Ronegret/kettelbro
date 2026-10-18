@@ -1,0 +1,98 @@
+{
+  "_doc": "Personas de MakeHuman (MPFB, activos CC0) que sustituyen a los muñecos de perfiles. Cada una: parámetros macro del cuerpo, piel, ojos, cejas, pestañas, pelo, ropa y calzado (rutas relativas a la carpeta de datos de MPFB). Se montan sobre el mismo esqueleto del contrato (tools/blender/mh/build_mh.py).",
+  "bro": {
+    "macro": {
+      "gender": 1,
+      "age": 0.5,
+      "muscle": 0.7,
+      "weight": 0.5,
+      "height": 0.55,
+      "proportions": 0.5
+    },
+    "race": {
+      "caucasian": 1,
+      "asian": 0,
+      "african": 0
+    },
+    "skin": "skins/young_caucasian_male/young_caucasian_male.mhmat",
+    "eyes": {
+      "mhclo": "eyes/low-poly/low-poly.mhclo",
+      "mhmat": "eyes/materials/brown.mhmat"
+    },
+    "eyebrows": "eyebrows/eyebrow004/eyebrow004.mhclo",
+    "eyelashes": null,
+    "hair": "hair/short02/short02.mhclo",
+    "clothes": [
+      "clothes/male_casualsuit06/male_casualsuit06.mhclo"
+    ],
+    "shoes": "clothes/shoes05/shoes05.mhclo",
+    "bell": {
+      "bell": "#17181f",
+      "bellHandle": "#17181f"
+    },
+    "minArmAbduction": 12,
+    "paint": {
+      "clothes0": {
+        "ref": [
+          0.08,
+          0.2,
+          0.22,
+          0.26
+        ],
+        "rects": [
+          [
+            0.185,
+            0.105,
+            0.305,
+            0.18
+          ],
+          [
+            0.44,
+            0.115,
+            0.625,
+            0.205
+          ],
+          [
+            0.735,
+            0.15,
+            0.757,
+            0.182
+          ]
+        ]
+      }
+    }
+  },
+  "princess": {
+    "macro": {
+      "gender": 0,
+      "age": 0.5,
+      "muscle": 0.45,
+      "weight": 0.4,
+      "height": 0.5,
+      "proportions": 0.5
+    },
+    "race": {
+      "caucasian": 1,
+      "asian": 0,
+      "african": 0
+    },
+    "skin": "skins/young_caucasian_female/young_caucasian_female.mhmat",
+    "eyes": {
+      "mhclo": "eyes/low-poly/low-poly.mhclo",
+      "mhmat": "eyes/materials/brown.mhmat"
+    },
+    "eyebrows": "eyebrows/eyebrow001/eyebrow001.mhclo",
+    "eyelashes": "eyelashes/eyelashes02/eyelashes02.mhclo",
+    "hair": "hair/ponytail01/ponytail01.mhclo",
+    "clothes": [
+      "clothes/female_sportsuit01/female_sportsuit01.mhclo"
+    ],
+    "shoes": "clothes/shoes06/shoes06.mhclo",
+    "bell": {
+      "bell": "#f2efe6",
+      "bellHandle": "#d7d2c4"
+    },
+    "minArmAbduction": 8,
+    "sockFix": true
+  }
+}

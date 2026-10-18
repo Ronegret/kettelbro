@@ -1,0 +1,12 @@
+[      38ms] [LOG] [Fast Refresh] done in 16ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[     247ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[     354ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[     470ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[     504ms] IndexSizeError: Failed to execute 'addColorStop' on 'CanvasGradient': The provided value (1.1) is outside the range (0.0, 1.0).
+    at renderShareCard (http://localhost:3000/_next/static/chunks/src_1aco-4q1esbcj._.js:228:11)
+    at async TarjetaLab.useEffect (http://localhost:3000/_next/static/chunks/src_1aco-4q1esbcj._.js:32:38)
+[     504ms] IndexSizeError: Failed to execute 'addColorStop' on 'CanvasGradient': The provided value (1.1) is outside the range (0.0, 1.0).
+    at renderShareCard (http://localhost:3000/_next/static/chunks/src_1aco-4q1esbcj._.js:228:11)
+    at async TarjetaLab.useEffect (http://localhost:3000/_next/static/chunks/src_1aco-4q1esbcj._.js:32:38)
+[     514ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ http://localhost:3000/dev/tarjeta:0
+[     551ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ http://localhost:3000/dev/tarjeta:0

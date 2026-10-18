@@ -1,0 +1,86 @@
+- generic [ref=f71e1]:
+  - alert [ref=f71e27]
+  - main [ref=f71e28]:
+    - generic [ref=f71e29]:
+      - button "Salir de la sesión" [ref=f71e30] [cursor=pointer]
+      - progressbar "Avance de la sesión" [ref=f71e33]
+      - button "Silenciar" [ref=f71e48] [cursor=pointer]
+    - paragraph [ref=f71e51]:
+      - generic [ref=f71e52]: Bloque 7 de 7 · vuelta a la calma
+      - generic [ref=f71e53]: Quedan 4:48
+    - generic [ref=f71e54]:
+      - generic [ref=f71e55]:
+        - 'img "Figura 3D animada: Sentadilla goblet con palanca" [ref=f71e57]'
+        - radiogroup "Ángulo de la figura" [ref=f71e62]:
+          - radio "Ver de lado" [ref=f71e63] [cursor=pointer]: Lado
+          - radio "Ver de frente" [checked] [ref=f71e64] [cursor=pointer]: Frente
+          - radio "Ver en tres cuartos" [ref=f71e65] [cursor=pointer]: 3/4
+          - radio "Alternar las vistas automáticamente" [ref=f71e66] [cursor=pointer]: Auto
+        - list [aria-hidden] [ref=f71e68]:
+          - listitem [ref=f71e69]:
+            - generic [ref=f71e70]: "1"
+          - listitem [ref=f71e71]:
+            - generic [ref=f71e72]: "2"
+          - listitem [ref=f71e73]:
+            - generic [ref=f71e74]: "3"
+      - heading "APERTURAS EN CUCLILLAS" [level=1] [ref=f71e75]
+      - paragraph [ref=f71e76]: 8 kg · 296 s
+      - paragraph [ref=f71e78]: 4:48
+      - paragraph [ref=f71e81]: Respira profundo y sube el pecho
+    - generic [ref=f71e83]:
+      - button "Continuar" [ref=f71e98] [cursor=pointer]
+      - generic [ref=f71e87]:
+        - button "Técnica" [ref=f71e88] [cursor=pointer]
+        - generic [ref=f71e91]:
+          - button "+10 s" [ref=f71e92] [cursor=pointer]
+          - button "Saltar" [ref=f71e93] [cursor=pointer]
+    - dialog "Sentadilla goblet con apertura de cadera" [ref=f71e99]:
+      - generic [ref=f71e100]:
+        - generic [ref=f71e101]:
+          - heading "Sentadilla goblet con apertura de cadera" [level=2] [ref=f71e102]
+          - button "Cerrar" [active] [ref=f71e103] [cursor=pointer]
+        - generic [ref=f71e106]:
+          - paragraph [ref=f71e107]: aductores · cadera · tobillo · Mantén 5-8 s por pasada
+          - generic [ref=f71e108]:
+            - 'img "Figura 3D animada: Sentadilla goblet con palanca" [ref=f71e110]'
+            - list [aria-hidden] [ref=f71e114]:
+              - listitem [ref=f71e115]:
+                - generic [ref=f71e116]: "1"
+              - listitem [ref=f71e117]:
+                - generic [ref=f71e118]: "2"
+                - generic [ref=f71e119]: Abre con los codos
+              - listitem [ref=f71e120]:
+                - generic [ref=f71e121]: "3"
+            - radiogroup "Ángulo de la figura" [ref=f71e122]:
+              - radio "Ver de lado" [ref=f71e123] [cursor=pointer]: Lado
+              - radio "Ver de frente" [checked] [ref=f71e124] [cursor=pointer]: Frente
+              - radio "Ver en tres cuartos" [ref=f71e125] [cursor=pointer]: 3/4
+              - radio "Alternar las vistas automáticamente" [ref=f71e126] [cursor=pointer]: Auto
+          - heading "Paso a paso" [level=3] [ref=f71e127]
+          - list [ref=f71e129]:
+            - listitem [ref=f71e130]:
+              - 'img "Figura 3D animada: Sentadilla goblet con palanca" [ref=f71e132]'
+              - paragraph [ref=f71e136]:
+                - generic [ref=f71e137]: "1"
+                - generic [ref=f71e138]: Baja
+            - listitem [ref=f71e139]:
+              - 'img "Figura 3D animada: Sentadilla goblet con palanca" [ref=f71e141]'
+              - paragraph [ref=f71e145]:
+                - generic [ref=f71e146]: "2"
+                - generic [ref=f71e147]: Abre con los codos
+            - listitem [ref=f71e148]:
+              - 'img "Figura 3D animada: Sentadilla goblet con palanca" [ref=f71e150]'
+              - paragraph [ref=f71e154]:
+                - generic [ref=f71e155]: "3"
+                - generic [ref=f71e156]: Sube
+          - heading "Cues" [level=3] [ref=f71e157]
+          - list [ref=f71e158]:
+            - listitem [ref=f71e159]: Abajo, pesa al pecho
+            - listitem [ref=f71e161]: Los codos empujan las rodillas hacia fuera
+            - listitem [ref=f71e163]: Respira profundo y sube el pecho
+            - listitem [ref=f71e165]: Balancea suave de lado a lado
+          - heading "Error común" [level=3] [ref=f71e167]
+          - paragraph [ref=f71e168]: Soltar el pecho. Mantén el torso alto mientras la cadera se abre.
+          - heading "Del coach" [level=3] [ref=f71e169]
+          - paragraph [ref=f71e170]: "Baja las pulsaciones: respira lento por la nariz."
+          - button "Respaldo científico de este bloque" [ref=f71e171] [cursor=pointer]

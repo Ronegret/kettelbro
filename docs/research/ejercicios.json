@@ -1,0 +1,776 @@
+[
+  {
+    "id": "kettlebell-deadlift",
+    "nameEs": "Peso muerto con kettlebell",
+    "pattern": "hinge",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["glúteo mayor", "isquiotibiales", "erectores espinales", "dorsal ancho", "agarre"],
+    "cuesEs": [
+      "Pesa entre los pies, caderas atrás, espalda larga",
+      "Dorsales firmes: 'guarda las axilas' antes de subir",
+      "Empuja el suelo con los pies y ponte alto",
+      "Arriba: glúteos apretados, sin inclinarte hacia atrás"
+    ],
+    "commonMistakeEs": "Redondear la zona lumbar o convertirlo en sentadilla (rodillas adelante) en vez de una bisagra de cadera.",
+    "regressionId": null,
+    "progressionId": "dead-swing",
+    "tempoOrCadence": "Controlado: bajar 2 s, pausa 1 s abajo, subir 1 s. 5 a 10 reps, 2 a 4 series, 1 a 2 reps de reserva (heurística). Es la base de enseñanza del swing: McGill propone la progresión 'short-stop squat' y luego swing.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://kettlebellkings.com/blogs/default-blog/master-the-hip-hinge-to-optimize-your-kettlebell-swing",
+      "https://www.strongfirst.com/is-there-a-perfect-swing-or-the-quest/",
+      "https://tonygentilcore.com/2014/12/kettlebell-swing-cue-hinge-never-perform-squat-swing/"
+    ]
+  },
+  {
+    "id": "dead-swing",
+    "nameEs": "Swing desde el suelo (dead swing)",
+    "pattern": "hinge",
+    "category": "ballistic",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["glúteo mayor", "isquiotibiales", "erectores espinales", "dorsal ancho", "core"],
+    "cuesEs": [
+      "Haz el 'hike': pesa inclinada hacia ti, antebrazos contra los muslos",
+      "Caderas atrás, espalda larga, mirada al frente",
+      "Lanza las caderas hacia delante, como saltar hacia delante",
+      "Deja la pesa en el suelo y reinicia: tu preparación es tu primera repetición"
+    ],
+    "commonMistakeEs": "Subir las caderas durante el hike (se pierde la bisagra) y tirar de la pesa con los brazos.",
+    "regressionId": "kettlebell-deadlift",
+    "progressionId": "two-hand-swing",
+    "tempoOrCadence": "Cada repetición parte del suelo, con pausa entre repeticiones. StrongFirst: 3 a 5 repeticiones de 'hinge and hike' antes de la repetición completa. Heurística: series de 5 reps, 5 a 8 series.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.strongfirst.com/is-there-a-perfect-swing-or-the-quest/",
+      "https://www.strongfirst.com/power-rhythm-kettlebell-swing/",
+      "https://www.strongfirst.com/?p=54786"
+    ]
+  },
+  {
+    "id": "two-hand-swing",
+    "nameEs": "Swing a dos manos",
+    "pattern": "hinge",
+    "category": "ballistic",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["glúteo mayor", "isquiotibiales", "erectores espinales", "dorsal ancho", "abdominales", "agarre"],
+    "cuesEs": [
+      "Hike: caderas atrás, pesa alta entre los muslos",
+      "Hombros 'en los bolsillos traseros': dorsales activos",
+      "Explota con las caderas: la pesa flota, los brazos no tiran",
+      "Arriba: plancha de pie, glúteos y abdomen apretados"
+    ],
+    "commonMistakeEs": "Hacer sentadilla en vez de bisagra (la pesa baja de las rodillas), levantar con los brazos o hiperextender la espalda arriba.",
+    "regressionId": "dead-swing",
+    "progressionId": "one-arm-swing",
+    "tempoOrCadence": "Fuentes: S&S usa 10 reps cada 30 s; media de ~22 swings/min en 12 min continuos con 16 kg (Farrar 2010); 32 a 48 swings/min en intervalos 15:15 (tesis Lakehead). StrongFirst: las RPM muy altas pierden la potencia. Heurística: 10 reps por minuto en EMOM de 10 a 12 min.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.strongfirst.com/is-there-a-perfect-swing-or-the-quest/",
+      "https://www.strongfirst.com/power-rhythm-kettlebell-swing/",
+      "https://www.strongfirst.com/proper-swing-grip-kettlebell-halo/",
+      "https://www.backfitpro.com/medical-scientific-articles/2012/%5B63%5DMcGill,S.(2012)Kettlebell-swing-snatch-and-bottoms-up-carry%5BJ.Strength-Condit.Res.%5D.pdf",
+      "https://sci-sport.com/kettlebell-swings-consommation-d-oxygene-et-frequence-cardiaque-040/",
+      "https://knowledgecommons.lakeheadu.ca/handle/2453/953"
+    ]
+  },
+  {
+    "id": "one-arm-swing",
+    "nameEs": "Swing a una mano",
+    "pattern": "hinge",
+    "category": "ballistic",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["glúteo mayor", "isquiotibiales", "erectores espinales", "dorsal ancho", "oblicuos", "agarre"],
+    "cuesEs": [
+      "Hombros nivelados: no dejes que la pesa gire el torso",
+      "Asa por encima de las rodillas en el balanceo hacia atrás",
+      "La pesa sube hasta el pecho, no más",
+      "Arriba flota un segundo con los glúteos apretados"
+    ],
+    "commonMistakeEs": "Dejar que la pesa tire del hombro y rote el torso, o bajar el asa por debajo de las rodillas.",
+    "regressionId": "two-hand-swing",
+    "progressionId": "kettlebell-clean",
+    "tempoOrCadence": "S&S: 10 reps cada 30 s cambiando de mano en cada serie (5 series por mano en 5 min). Heurística: empezar con 5 reps por serie. McGill: el swing a dos manos es más simétrico en la activación de espalda y cadera.",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.strongfirst.com/sinister/",
+      "https://www.strongfirst.com/?p=62090",
+      "https://www.backfitpro.com/medical-scientific-articles/2012/%5B63%5DMcGill,S.(2012)Kettlebell-swing-snatch-and-bottoms-up-carry%5BJ.Strength-Condit.Res.%5D.pdf"
+    ]
+  },
+  {
+    "id": "goblet-squat",
+    "nameEs": "Sentadilla goblet",
+    "pattern": "squat",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["cuádriceps", "glúteo mayor", "aductores", "core", "espalda alta"],
+    "cuesEs": [
+      "Pesa pegada al pecho, codos hacia abajo",
+      "Respira al abdomen y aprieta el tronco antes de bajar",
+      "Al fondo, codos dentro de las rodillas: empújalas hacia afuera",
+      "Pies planos, pecho alto; sube empujando el suelo"
+    ],
+    "commonMistakeEs": "Alejar la pesa del pecho para contrapesarse, levantar los talones o dejar que el torso se desplome.",
+    "regressionId": null,
+    "progressionId": "kettlebell-front-squat",
+    "tempoOrCadence": "Fuente: calentamiento de S&S con ladders 2-3-5 reps al ~50 % del peso corporal y 30 a 60 s de descanso; test de Rusin de 25 reps seguidas al ~50 % del peso corporal. Heurística: bajar 2 s, 8 a 12 reps.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://otpbooks.com/?p=13649",
+      "https://www.strongfirst.com/kettlebell-simple-sinister-tips-for-heavy-goblet-squats/",
+      "https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/"
+    ]
+  },
+  {
+    "id": "prying-goblet-squat",
+    "nameEs": "Sentadilla goblet con apertura de cadera (prying)",
+    "pattern": "mobility",
+    "category": "mobility",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["aductores", "glúteo mayor", "rotadores de cadera", "tobillos", "columna torácica"],
+    "cuesEs": [
+      "Baja hasta el fondo con la pesa pegada al pecho",
+      "Los codos empujan las rodillas hacia afuera",
+      "Busca espacio: balancea y mueve suave la cadera en el fondo",
+      "Respira 3 a 5 veces abajo, talones planos"
+    ],
+    "commonMistakeEs": "Forzar el rango con dolor o usar el prying en series pesadas de fuerza.",
+    "regressionId": null,
+    "progressionId": "goblet-squat",
+    "tempoOrCadence": "Fuente: Pavel (S&S) hace el prying solo en la primera serie de 5 y carga más, sin prying, en las siguientes. Se recomienda conservarlo en el calentamiento aunque se omitan halos y puentes con el tiempo.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.strongfirst.com/kettlebell-simple-sinister-tips-for-heavy-goblet-squats/",
+      "https://www.strongfirst.com/an-excerpt-from-kettlebell-simple-sinister/",
+      "https://otpbooks.com/?p=13649"
+    ]
+  },
+  {
+    "id": "kettlebell-halo",
+    "nameEs": "Halo con kettlebell",
+    "pattern": "mobility",
+    "category": "mobility",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["deltoides", "manguito rotador", "serrato anterior", "trapecio", "core"],
+    "cuesEs": [
+      "Muñeca neutra y pesa ligera",
+      "Cabeza quieta: la pesa rodea la cabeza",
+      "Inclina la pesa: la base apunta hacia donde viaja",
+      "Lento y solo hasta donde llegue tu movilidad"
+    ],
+    "commonMistakeEs": "Mover la cabeza para esquivar la pesa o doblar la muñeca.",
+    "regressionId": null,
+    "progressionId": null,
+    "tempoOrCadence": "Fuente: 3 a 5 vueltas por dirección, lento. StrongFirst lo define como un drill de calentamiento, no como un ejercicio principal; no se hacen muchas repeticiones.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.strongfirst.com/proper-swing-grip-kettlebell-halo/"
+    ]
+  },
+  {
+    "id": "kettlebell-clean",
+    "nameEs": "Clean (cargada al rack) con kettlebell",
+    "pattern": "full-body",
+    "category": "ballistic",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["glúteo mayor", "isquiotibiales", "dorsal ancho", "trapecio", "bíceps y antebrazo", "core"],
+    "cuesEs": [
+      "Las caderas empujan; el brazo solo guía",
+      "Pesa pegada al cuerpo, como si subiera por una cremallera",
+      "Codo en las costillas, antebrazo vertical en el rack",
+      "Recibe la pesa: desenrolla la muñeca, el cuerpo de la pesa queda bajo la mano"
+    ],
+    "commonMistakeEs": "Dejar que la pesa viaje lejos y gire (flip), golpeando el antebrazo o el hombro: causa típica de los moretones.",
+    "regressionId": "one-arm-swing",
+    "progressionId": "kettlebell-snatch",
+    "tempoOrCadence": "Heurística: series de 3 a 5 reps por lado, descanso de 30 a 90 s. ROP: ladders 1-2-3. StrongFirst: si la pesa cambia tu clean o tu rack, es demasiado pesada.",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.strongfirst.com/3-cleans-relationship-form-function/",
+      "https://barbend.com/avoid-kettlebell-forearm-flop/",
+      "https://breakingmuscle.com/how-to-not-rip-your-hands-and-how-to-fix-them-if-its-too-late/"
+    ]
+  },
+  {
+    "id": "kettlebell-military-press",
+    "nameEs": "Press militar estricto con kettlebell",
+    "pattern": "push",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["deltoides", "tríceps", "serrato anterior", "dorsal ancho (estabilización)", "core", "glúteos"],
+    "cuesEs": [
+      "Antes de empujar: agarre, dorsales, abdomen y glúteos firmes (GLAG)",
+      "Codo cerca, antebrazo vertical, muñeca neutra",
+      "Empuja en línea recta sin inclinarte hacia atrás",
+      "Baja la pesa al rack tirando con el dorsal"
+    ],
+    "commonMistakeEs": "Arquear la zona lumbar, inclinarse hacia atrás y encoger el hombro.",
+    "regressionId": "half-kneeling-press",
+    "progressionId": "bottoms-up-press",
+    "tempoOrCadence": "Fuente: ROP con ladders 1-2-3 por lado, usando una pesa con la que se puedan hacer 5 a 8 press estrictos con el brazo débil. Heurística: subir 1 s, bajar 2 s, 3 a 5 reps por serie.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.strongfirst.com/military-press-strength-that-transfers-only-if-you-use-your-lats/",
+      "https://toughenup.com/rop/",
+      "https://blog.gofnn.com/articles/kettlebell-rite-of-passage/"
+    ]
+  },
+  {
+    "id": "kettlebell-push-press",
+    "nameEs": "Push press con kettlebell",
+    "pattern": "push",
+    "category": "ballistic",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["cuádriceps", "glúteos", "deltoides", "tríceps", "core"],
+    "cuesEs": [
+      "Dip corto y rápido, torso vertical",
+      "Empuja el suelo: las piernas lanzan la pesa",
+      "Extiende piernas por completo y termina con el brazo",
+      "Pesa alineada sobre el hombro, sin arco lumbar"
+    ],
+    "commonMistakeEs": "Presionar con el brazo antes de terminar la extensión de piernas, o hacer un dip lento y profundo.",
+    "regressionId": "kettlebell-military-press",
+    "progressionId": null,
+    "tempoOrCadence": "Heurística: 3 a 6 reps rápidas por lado, descanso de 1 a 2 min. Fuente de coaching: dip de ~10 % de la estatura, rápido (Elitefts).",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://elitefts.com/blogs/training/watch-mastering-leg-drive-in-the-push-press",
+      "https://motra.com/exercises/kettlebellPushPress"
+    ]
+  },
+  {
+    "id": "kettlebell-front-squat",
+    "nameEs": "Sentadilla frontal con kettlebell (en rack)",
+    "pattern": "squat",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["cuádriceps", "glúteo mayor", "aductores", "core", "espalda alta"],
+    "cuesEs": [
+      "Rack firme: codo en las costillas, pesa pegada al pecho",
+      "Baja con control 'alargando los fémures': cadera atrás y rodillas adelante",
+      "Hombros abajo, sin encoger",
+      "Sube con el pecho y exhala en el último tercio"
+    ],
+    "commonMistakeEs": "Dejar que el codo se abra y la pesa se aleje del cuerpo, desplomando el torso.",
+    "regressionId": "goblet-squat",
+    "progressionId": null,
+    "tempoOrCadence": "Heurística: bajar 2 s, 5 reps por serie, 3 a 5 series. Con dos pesas forma parte del Armor Building Complex (3 sentadillas frontales por ronda).",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.strongfirst.com/kettlebell-simple-sinister-tips-for-heavy-goblet-squats/",
+      "https://www.strongfirst.com/3-cleans-relationship-form-function/",
+      "https://breakingmuscle.com/the-armor-building-kettlebell-complex-and-4-other-beastly-strength-builders/"
+    ]
+  },
+  {
+    "id": "kettlebell-snatch",
+    "nameEs": "Snatch (arranque) con kettlebell",
+    "pattern": "full-body",
+    "category": "ballistic",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["glúteo mayor", "isquiotibiales", "dorsal ancho", "trapecio", "deltoides", "core", "agarre"],
+    "cuesEs": [
+      "Hike profundo: las caderas lanzan, no el brazo",
+      "Pesa cerca del cuerpo en toda la subida",
+      "Agarre relajado, sin estrangular el asa",
+      "Bloqueo con hombro abajo y codo vertical; absorbe la caída con las caderas"
+    ],
+    "commonMistakeEs": "Arco amplio de la pesa: golpea la muñeca o el antebrazo arriba por tirar con el brazo.",
+    "regressionId": "kettlebell-clean",
+    "progressionId": null,
+    "tempoOrCadence": "Fuentes: test de 200 reps en 10 min (20 reps/min) con 24 kg hombres y 16 kg mujeres; StrongFirst usa series de 5 cada 30 a 60 s y 5 por mano cada minuto (EMOM). Deporte: 3 a 19 reps/min según nivel (derivado de tablas IKSFA).",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.strongfirst.com/the-snatch-the-tsar-of-kettlebell-lifts/",
+      "https://www.strongfirst.com/?p=93769",
+      "https://www.everydaymarksman.co/physical-fitness/200-snatch-workout/",
+      "https://kettlebell.university/sport/rules/ranking-system/"
+    ]
+  },
+  {
+    "id": "turkish-get-up",
+    "nameEs": "Turkish get-up (levantada turca)",
+    "pattern": "full-body",
+    "category": "skill",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["deltoides", "manguito rotador", "serrato anterior", "oblicuos y transverso", "glúteos", "cuádriceps", "dorsal ancho"],
+    "cuesEs": [
+      "1) Press inicial: puño apretado, dorsal tenso, hombro lejos de la oreja, mira la pesa",
+      "2) Rodar al codo: aprieta las costillas, rueda y empuja con el codo; la pierna no se despega",
+      "3) Del codo a la mano (sentado alto): empuja el suelo lejos, brazo vertical, hombro abajo",
+      "4) Puente: eleva la cadera con los glúteos manteniendo ambos hombros activos",
+      "5) Barrido de pierna: pasa la pierna por debajo hasta media rodilla, rodilla bajo la cadera, pecho alto",
+      "6) De pie: costillas abajo, glúteos apretados, brazo bloqueado, empuja con ambos pies",
+      "7) Descenso: invierte cada etapa, lento, con la rodilla al suelo en silencio"
+    ],
+    "commonMistakeEs": "Perder el hombro (sube hacia la oreja) o tirar con la espalda en el barrido de pierna, en lugar de extender la cadera.",
+    "regressionId": "get-up-to-tall-sit",
+    "progressionId": null,
+    "tempoOrCadence": "Fuentes: S&S usa 1 get-up por minuto durante 10 min (5 por lado), sin prisa; Program Minimum usa 5 a 9 min sin contar reps. Heurística: pausa de 1 a 2 s en cada etapa; novatos sin carga o con un zapato sobre el puño.",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.strongfirst.com/the-turkish-get-up-a-clinicians-perspective/",
+      "https://www.strongfirst.com/sinister/",
+      "https://www.strongfirst.com/community/threads/s-s-turkish-getup-stages.15365/",
+      "https://www.nsca.com/education/articles/ptq/using-feedback-drills-to-coach-the-turkish-get-up/",
+      "https://tonygentilcore.com/2013/06/turkish-get-up-roll-to-elbow-conundrum/"
+    ]
+  },
+  {
+    "id": "get-up-to-tall-sit",
+    "nameEs": "Get-up parcial (hasta sentado alto)",
+    "pattern": "full-body",
+    "category": "skill",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["deltoides", "manguito rotador", "serrato anterior", "oblicuos", "dorsal ancho"],
+    "cuesEs": [
+      "Puño apretado, dorsal tenso, mira la pesa",
+      "Rueda al codo con las costillas firmes",
+      "Del codo a la mano: empuja el suelo, hombro abajo",
+      "Vuelve invirtiendo el orden, lento"
+    ],
+    "commonMistakeEs": "Levantar la pierna al rodar o dejar que el hombro suba hacia la oreja.",
+    "regressionId": "kettlebell-arm-bar",
+    "progressionId": "turkish-get-up",
+    "tempoOrCadence": "Fuente: StrongFirst recomienda practicar el get-up por partes y añadir etapas cuando las anteriores estén fluidas. Heurística: 3 a 5 reps por lado con pausa de 1 a 2 s en cada etapa.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.strongfirst.com/the-turkish-get-up-a-clinicians-perspective/",
+      "https://www.strongfirst.com/community/threads/s-s-turkish-getup-stages.15365/",
+      "https://www.strongfirst.com/?p=54786"
+    ]
+  },
+  {
+    "id": "kettlebell-windmill",
+    "nameEs": "Windmill (molino) con kettlebell",
+    "pattern": "hinge",
+    "category": "skill",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["oblicuos", "glúteo medio y mayor", "rotadores de cadera", "isquiotibiales", "estabilizadores del hombro"],
+    "cuesEs": [
+      "Pies dentro del ancho de hombros, a 45° lejos del brazo cargado",
+      "'Shift and lift': cadera atrás y pierna larga, rodilla delantera blanda",
+      "Reparto ~70/30: más peso en la pierna trasera",
+      "Mira la pesa, brazo vertical, sin flexión lateral de columna"
+    ],
+    "commonMistakeEs": "Convertirlo en 'buenos días' (pierna delantera estirada buscando el estiramiento) o doblar la columna hacia el lado.",
+    "regressionId": null,
+    "progressionId": null,
+    "tempoOrCadence": "Fuente: accesorio de 1 a 2 series de 3 a 5 reps por lado tras los get-ups, o superserie 1+1 get-up con 3+3 windmill (2 a 5 veces). No en fatiga ni al máximo.",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.strongfirst.com/kettlebell-windmill-101/"
+    ]
+  },
+  {
+    "id": "single-leg-deadlift",
+    "nameEs": "Peso muerto a una pierna con kettlebell",
+    "pattern": "hinge",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["glúteo mayor y medio", "isquiotibiales", "erectores espinales", "core", "estabilizadores del pie y tobillo"],
+    "cuesEs": [
+      "Cadera cuadrada: no la abras al bajar",
+      "Pierna trasera larga y espalda larga, como una sola palanca",
+      "Peso en el centro del pie, rodilla de apoyo suave",
+      "Baja 2 a 3 s y sube empujando el suelo"
+    ],
+    "commonMistakeEs": "Rotar la cadera o redondear la espalda para bajar más.",
+    "regressionId": "kettlebell-deadlift",
+    "progressionId": null,
+    "tempoOrCadence": "Fuentes de coaching: bajada de ~3 s, 6 a 10 reps por pierna; versión con el pie libre apoyado ligeramente (kickstand) como paso previo. Heurística.",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://motra.com/exercises/kettlebellSingleLegRomanianDeadlift",
+      "https://simplifaster.com/articles/romanian-deadlifts-technique-programming/"
+    ]
+  },
+  {
+    "id": "one-arm-row",
+    "nameEs": "Remo a una mano con kettlebell",
+    "pattern": "pull",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["dorsal ancho", "romboides", "trapecio medio", "deltoides posterior", "bíceps", "agarre"],
+    "cuesEs": [
+      "Bisagra con espalda larga y la mano libre apoyada",
+      "Omóplato atrás y abajo antes de tirar",
+      "Codo hacia la cadera, cerca del cuerpo",
+      "Baja controlado, sin girar el torso"
+    ],
+    "commonMistakeEs": "Rotar el torso y usar impulso para subir la pesa en vez de tirar con la espalda.",
+    "regressionId": null,
+    "progressionId": null,
+    "tempoOrCadence": "Heurística: 8 a 12 reps por lado, subir 1 s y bajar 2 s. En el ROP sustituye a la dominada con la misma pesa del press, igualando las repeticiones del peldaño.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://motra.com/exercises/kettlebellBentOverSingleArmRow",
+      "https://toughenup.com/rop/",
+      "https://www.strongfirst.com/community/threads/cues-to-keep-bottom-shoulder-packed-in-getup.5530/"
+    ]
+  },
+  {
+    "id": "suitcase-carry",
+    "nameEs": "Caminata de maleta (suitcase carry)",
+    "pattern": "carry",
+    "category": "carry",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["oblicuos", "cuadrado lumbar", "glúteo medio", "trapecio superior", "agarre"],
+    "cuesEs": [
+      "Alto: costillas abajo, torso vertical",
+      "Hombros nivelados: no te inclines al lado contrario",
+      "Pasos cortos y controlados",
+      "Agarre firme y respira sin perder la tensión"
+    ],
+    "commonMistakeEs": "Inclinarse hacia el lado contrario a la pesa para compensar el peso.",
+    "regressionId": "farmer-carry",
+    "progressionId": null,
+    "tempoOrCadence": "Heurística: 20 a 40 m (o 30 a 60 s) por lado, 2 a 4 series. McGill: la carga espinal de cargar una kettlebell en rack es similar a la de cargar una maleta.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.acefitness.org/resources/everyone/exercise-library/389/suitcase-carry/",
+      "https://motra.com/exercises/kettlebellSingleArmFarmersWalk",
+      "https://www.backfitpro.com/medical-scientific-articles/2012/%5B63%5DMcGill,S.(2012)Kettlebell-swing-snatch-and-bottoms-up-carry%5BJ.Strength-Condit.Res.%5D.pdf"
+    ]
+  },
+  {
+    "id": "rack-carry",
+    "nameEs": "Caminata en rack con kettlebell",
+    "pattern": "carry",
+    "category": "carry",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["core", "glúteos", "deltoides", "oblicuos", "cuádriceps", "agarre"],
+    "cuesEs": [
+      "Rack firme: codo en la costilla, antebrazo vertical",
+      "Glúteos apretados, plancha de pie",
+      "Pasos cortos, sin inclinarte hacia atrás",
+      "Costillas abajo y respira sin soltar la tensión"
+    ],
+    "commonMistakeEs": "Dejar caer el codo o inclinarse hacia atrás (hiperextender) para sostener la pesa.",
+    "regressionId": "farmer-carry",
+    "progressionId": "bottom-up-carry",
+    "tempoOrCadence": "Heurística: 20 a 40 m por lado, 2 a 4 series. McGill: activación baja de torso y cadera en el rack carry y carga espinal similar a la de la maleta.",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.backfitpro.com/medical-scientific-articles/2012/%5B63%5DMcGill,S.(2012)Kettlebell-swing-snatch-and-bottoms-up-carry%5BJ.Strength-Condit.Res.%5D.pdf",
+      "https://www.strongfirst.com/3-cleans-relationship-form-function/"
+    ]
+  },
+  {
+    "id": "farmer-carry",
+    "nameEs": "Caminata del granjero con dos kettlebells",
+    "pattern": "carry",
+    "category": "carry",
+    "equipment": "kettlebell",
+    "bells": 2,
+    "unilateral": false,
+    "muscles": ["trapecio superior", "agarre y antebrazos", "core", "glúteos", "erectores espinales"],
+    "cuesEs": [
+      "Hombros atrás y abajo, pecho alto",
+      "Pasos cortos y firmes, mirada al frente",
+      "Agarra fuerte pero respira",
+      "No dejes que las pesas te inclinen hacia delante"
+    ],
+    "commonMistakeEs": "Encoger los hombros y dejar que el peso te incline hacia delante.",
+    "regressionId": null,
+    "progressionId": "suitcase-carry",
+    "tempoOrCadence": "Heurística: 20 a 40 m por serie, 2 a 4 series. Es la base antes de pasar a cargas asimétricas (maleta) o en rack.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.acefitness.org/resources/everyone/exercise-library/389/suitcase-carry/",
+      "https://motra.com/exercises/kettlebellSingleArmFarmersWalk"
+    ]
+  },
+  {
+    "id": "bottom-up-carry",
+    "nameEs": "Caminata bottoms-up (pesa invertida)",
+    "pattern": "carry",
+    "category": "carry",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["antebrazos y agarre", "core", "estabilizadores del hombro", "oblicuos", "deltoides"],
+    "cuesEs": [
+      "Muñeca, antebrazo y asa alineados",
+      "Aprieta el asa con todos los dedos, incluido el meñique",
+      "Codo cerca del cuerpo, hombro abajo",
+      "Pesa ligera: la que presionas bottoms-up de 6 a 8 veces"
+    ],
+    "commonMistakeEs": "Elegir una pesa demasiado pesada y perder la posición (la pesa cae al rack).",
+    "regressionId": "rack-carry",
+    "progressionId": null,
+    "tempoOrCadence": "Fuente: McGill encontró más activación de core y mayor carga espinal que en el rack, aunque la carga sigue siendo conservadora. Heurística: 15 a 30 m por serie con pesa ligera y sin prisa.",
+    "levelMin": "advanced",
+    "sourceUrls": [
+      "https://www.backfitpro.com/medical-scientific-articles/2012/%5B63%5DMcGill,S.(2012)Kettlebell-swing-snatch-and-bottoms-up-carry%5BJ.Strength-Condit.Res.%5D.pdf",
+      "https://www.strongfirst.com/the-bottoms-up-experiment/"
+    ]
+  },
+  {
+    "id": "reverse-lunge-racked",
+    "nameEs": "Zancada hacia atrás con kettlebell en rack",
+    "pattern": "lunge",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["cuádriceps", "glúteo mayor", "isquiotibiales", "core"],
+    "cuesEs": [
+      "Rack firme y pecho alto",
+      "Paso largo hacia atrás, la rodilla trasera baja hacia el suelo",
+      "Torso vertical y rodilla delantera sobre el tobillo",
+      "Empuja con el talón delantero para volver"
+    ],
+    "commonMistakeEs": "Inclinar el torso hacia delante o dejar que la rodilla delantera caiga hacia adentro.",
+    "regressionId": "goblet-squat",
+    "progressionId": null,
+    "tempoOrCadence": "Heurística: bajar 2 s, 6 a 10 reps por pierna. Dar el paso hacia atrás reduce el avance de la rodilla delantera.",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://www.liftosaur.com/exercises/kettlebell-reverse-lunge",
+      "https://fitbod.me/exercises/kettlebell-racked-reverse-lunge",
+      "https://www.strongfirst.com/3-cleans-relationship-form-function/"
+    ]
+  },
+  {
+    "id": "kettlebell-glute-bridge",
+    "nameEs": "Puente de glúteo con kettlebell",
+    "pattern": "hinge",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["glúteo mayor", "isquiotibiales", "core"],
+    "cuesEs": [
+      "Espalda en el suelo, pies planos cerca de los glúteos, pesa sobre la cadera",
+      "Aprieta los glúteos y sube hasta línea recta rodillas, cadera y hombros",
+      "Costillas abajo: extiende la cadera, no arquees la zona lumbar",
+      "Pausa 1 a 2 s arriba y baja controlado"
+    ],
+    "commonMistakeEs": "Hiperextender la zona lumbar en lugar de extender la cadera.",
+    "regressionId": null,
+    "progressionId": null,
+    "tempoOrCadence": "Fuente: en S&S el puente busca la máxima contracción de glúteo y rango, no resistencia (3×5 en el calentamiento). Heurística: 8 a 15 reps con pausa de 1 a 2 s.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://www.goodreads.com/notes/48637798-kettlebell-simple-sinister/59877844-peter-jonsson",
+      "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/"
+    ]
+  },
+  {
+    "id": "kettlebell-floor-press",
+    "nameEs": "Press en el suelo con kettlebell",
+    "pattern": "push",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["pectoral mayor", "tríceps", "deltoides anterior", "serrato anterior"],
+    "cuesEs": [
+      "Acostado, rodillas dobladas, muñeca neutra",
+      "Codo a ~45° del tronco, antebrazo vertical",
+      "Empuja hacia el techo con el hombro abajo",
+      "Baja hasta que el tríceps toque el suelo, pausa breve"
+    ],
+    "commonMistakeEs": "Abrir los codos a 90° (más estrés en el hombro) o dejar que el hombro suba.",
+    "regressionId": null,
+    "progressionId": "half-kneeling-press",
+    "tempoOrCadence": "Heurística: bajar 2 s, pausa de 1 s en el suelo, 5 a 10 reps por lado. Es la primera etapa del get-up: S&S exige levantar la pesa del suelo con dos manos a la posición de inicio del floor press.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://kettlebellkings.com/blogs/default-blog/kettlebell-floor-press",
+      "https://www.strongfirst.com/?p=62090",
+      "https://www.strongfirst.com/?p=54786"
+    ]
+  },
+  {
+    "id": "half-kneeling-press",
+    "nameEs": "Press en media rodilla con kettlebell",
+    "pattern": "push",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["deltoides", "tríceps", "glúteo de la rodilla apoyada", "core", "oblicuos"],
+    "cuesEs": [
+      "Rodilla apoyada bajo la cadera; aprieta ese glúteo",
+      "Costillas abajo, pelvis neutra, torso alto",
+      "Presiona recto hasta apilar muñeca, codo y hombro",
+      "No te inclines ni te gires"
+    ],
+    "commonMistakeEs": "Arquear la zona lumbar o inclinarse hacia atrás, lo que convierte el press en un press inclinado.",
+    "regressionId": "kettlebell-floor-press",
+    "progressionId": "kettlebell-military-press",
+    "tempoOrCadence": "Heurística: 5 reps por lado, bajar 2 s. Las fuentes de coaching difieren sobre qué brazo presionar (mismo lado de la rodilla apoyada o el opuesto); ambas versiones son válidas.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://platform.instituteofmotion.com/library/block/dhdo4vz7/",
+      "https://us.humankinetics.com/blogs/excerpt/overhead-pressing",
+      "https://motra.com/exercises/kettlebellHalfKneelingSingleArmPress"
+    ]
+  },
+  {
+    "id": "kettlebell-figure-8",
+    "nameEs": "Figura de ocho con kettlebell",
+    "pattern": "full-body",
+    "category": "skill",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": false,
+    "muscles": ["glúteos", "isquiotibiales", "core", "oblicuos", "antebrazos"],
+    "cuesEs": [
+      "Bisagra de cadera, pecho alto, espalda neutra",
+      "Pasa la pesa por entre las piernas de una mano a la otra",
+      "Movimiento fluido, sin pausas",
+      "Pesa ligera y codo cerca del cuerpo"
+    ],
+    "commonMistakeEs": "Redondear la espalda al pasar la pesa o tirar la pesa hacia la cara.",
+    "regressionId": "kettlebell-deadlift",
+    "progressionId": null,
+    "tempoOrCadence": "Heurística: 8 a 10 pasadas por serie en ritmo fluido (30 a 60 s). Las fuentes consultadas no dan una cadencia estándar.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://motra.com/exercises/kettlebellFigureEight",
+      "https://alloypersonaltraining.com/figure-8s/"
+    ]
+  },
+  {
+    "id": "kettlebell-arm-bar",
+    "nameEs": "Arm bar con kettlebell",
+    "pattern": "mobility",
+    "category": "mobility",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["manguito rotador", "serrato anterior", "deltoides", "oblicuos", "dorsal ancho"],
+    "cuesEs": [
+      "Tumbado, pesa vertical con el codo extendido y la muñeca recta",
+      "Hombro abajo y empaquetado, mira la pesa",
+      "Rueda desde la cadera, sin mover el hombro",
+      "Respira lento y haz una pausa en el rango final"
+    ],
+    "commonMistakeEs": "Doblar la muñeca o el codo y mover el hombro en lugar de rodar desde la cadera.",
+    "regressionId": null,
+    "progressionId": "get-up-to-tall-sit",
+    "tempoOrCadence": "Heurística: 3 a 5 reps por lado con pausas de 2 a 3 s. StrongFirst (PM²) lo ubica como el drill más fácil de la familia get-up.",
+    "levelMin": "novice",
+    "sourceUrls": [
+      "https://library.theprehabguys.com/?p=8691",
+      "https://www.motra.com/exercises/kettlebellArmBar",
+      "https://www.strongfirst.com/?p=54786"
+    ]
+  },
+  {
+    "id": "kettlebell-clean-and-press",
+    "nameEs": "Clean and press con kettlebell",
+    "pattern": "full-body",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["glúteos", "isquiotibiales", "deltoides", "tríceps", "dorsal ancho", "core"],
+    "cuesEs": [
+      "Clean limpio al rack: caderas, no brazo",
+      "Pausa en el rack: respira y activa agarre, dorsales, abdomen y glúteos",
+      "Press estricto en línea recta",
+      "Baja la pesa al rack con el dorsal, sin dejarla caer"
+    ],
+    "commonMistakeEs": "Presionar desde un rack inestable, con la pesa lejos del cuerpo.",
+    "regressionId": "kettlebell-military-press",
+    "progressionId": "armor-building-complex",
+    "tempoOrCadence": "Fuente: ROP con ladders 1-2-3 por lado; descanso de 1 a 3 min entre escaleras (2 a 5 min en el día pesado); 3 días por semana (pesado, medio, ligero).",
+    "levelMin": "intermediate",
+    "sourceUrls": [
+      "https://toughenup.com/rop/",
+      "https://blog.gofnn.com/articles/kettlebell-rite-of-passage/"
+    ]
+  },
+  {
+    "id": "armor-building-complex",
+    "nameEs": "Armor Building Complex (2 cleans, 1 press, 3 sentadillas frontales)",
+    "pattern": "full-body",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 2,
+    "unilateral": false,
+    "muscles": ["glúteos", "cuádriceps", "deltoides", "tríceps", "dorsal ancho", "core", "agarre"],
+    "cuesEs": [
+      "2 cleans, 1 press y 3 sentadillas frontales sin soltar las pesas",
+      "Entre movimientos las pesas quedan en el rack",
+      "No dejes caer las pesas al rack",
+      "Respira en el rack y mantén el torso firme"
+    ],
+    "commonMistakeEs": "Dejar caer las pesas al rack o apresurar la ronda perdiendo técnica.",
+    "regressionId": "kettlebell-clean-and-press",
+    "progressionId": null,
+    "tempoOrCadence": "Fuentes de confianza media-baja: Dan John, secuencia 2-1-3; descanso 'según necesidad'; meta de ~30 rondas en ~30 min (objetivo, no obligación); 3 días por semana durante 8 a 12 semanas.",
+    "levelMin": "advanced",
+    "sourceUrls": [
+      "https://breakingmuscle.com/the-armor-building-kettlebell-complex-and-4-other-beastly-strength-builders/",
+      "https://www.strongfirst.com/community/threads/dan-john%E2%80%99s-armor-building-formula.29135/post-609079"
+    ]
+  },
+  {
+    "id": "bottoms-up-press",
+    "nameEs": "Press bottoms-up (pesa invertida)",
+    "pattern": "push",
+    "category": "grind",
+    "equipment": "kettlebell",
+    "bells": 1,
+    "unilateral": true,
+    "muscles": ["deltoides", "tríceps", "antebrazos y agarre", "manguito rotador", "core"],
+    "cuesEs": [
+      "Antebrazo, muñeca, asa y pesa en línea recta",
+      "Pulgar hacia el lado lejano del asa; aprieta con todos los dedos",
+      "Misma trayectoria que el press normal, sube lento",
+      "Si pierdes la posición, baja una pesa"
+    ],
+    "commonMistakeEs": "Elegir una pesa demasiado pesada o doblar la muñeca.",
+    "regressionId": "kettlebell-military-press",
+    "progressionId": null,
+    "tempoOrCadence": "Fuente: elegir una pesa con la que se hagan 6 a 8 press bottoms-up; el tiempo bajo tensión es alto, así que el volumen debe ser moderado. Requiere dominar antes clean, press y sentadilla.",
+    "levelMin": "advanced",
+    "sourceUrls": [
+      "https://www.strongfirst.com/the-bottoms-up-experiment/"
+    ]
+  }
+]

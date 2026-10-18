@@ -1,0 +1,20 @@
+- generic [active] [ref=f64e1]:
+  - alert [ref=f64e27]
+  - main [ref=f64e443]:
+    - generic [ref=f64e444]:
+      - button "Salir de la sesión" [ref=f64e445] [cursor=pointer]
+      - progressbar "Avance de la sesión" [ref=f64e448]
+      - button "Silenciar" [ref=f64e457] [cursor=pointer]
+    - paragraph [ref=f64e460]:
+      - generic [ref=f64e461]: Bloque 1 de 7 · calentamiento
+      - generic [ref=f64e462]: Quedan 20:00
+    - generic [ref=f64e463]:
+      - paragraph [ref=f64e464]: Prepárate
+      - paragraph [ref=f64e465]: "5"
+      - 'img "Figura 3D animada: Halo" [ref=f64e467]'
+      - paragraph [ref=f64e471]: Halo · 8 kg
+    - generic [ref=f64e473]:
+      - button "Pausa" [ref=f64e474] [cursor=pointer]
+      - generic [ref=f64e477]:
+        - button "Técnica" [ref=f64e478] [cursor=pointer]
+        - button "Saltar" [ref=f64e482] [cursor=pointer]

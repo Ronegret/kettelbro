@@ -1,0 +1,13 @@
+- generic [active] [ref=f58e1]:
+  - main [ref=f58e2]:
+    - paragraph [ref=f58e3]: princess · fase 0.4 · 300px · 4 ejercicios
+    - generic [ref=f58e4]:
+      - figure "Swing a dos manos" [ref=f58e5]:
+        - 'img "Figura 3D animada: Swing a dos manos" [ref=f58e7]'
+      - figure "Sentadilla goblet" [ref=f58e11]:
+        - 'img "Figura 3D animada: Sentadilla goblet" [ref=f58e13]'
+      - figure "Press estricto" [ref=f58e17]:
+        - 'img "Figura 3D animada: Press estricto" [ref=f58e19]'
+      - figure "Halo" [ref=f58e23]:
+        - 'img "Figura 3D animada: Halo" [ref=f58e25]'
+  - alert [ref=f58e29]

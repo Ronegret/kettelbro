@@ -1,0 +1,23 @@
+- generic [active] [ref=f67e1]:
+  - alert [ref=f67e27]
+  - main [ref=f67e28]:
+    - generic [ref=f67e29]:
+      - button "Salir de la sesión" [ref=f67e30] [cursor=pointer]
+      - progressbar "Avance de la sesión" [ref=f67e33]
+      - button "Silenciar" [ref=f67e43] [cursor=pointer]
+    - paragraph [ref=f67e46]:
+      - generic [ref=f67e47]: Bloque 2 de 7 · calentamiento
+      - generic [ref=f67e48]: Quedan 19:20
+    - generic [ref=f67e49]:
+      - 'img "Figura animada: Sentadilla goblet con palanca" [ref=f67e53]'
+      - heading "APERTURAS EN CUCLILLAS" [level=1] [ref=f67e95]
+      - paragraph [ref=f67e96]: 8 kg · 40 s
+      - paragraph [ref=f67e98]: 0:40
+      - paragraph [ref=f67e100]: Abajo, pesa al pecho
+    - generic [ref=f67e102]:
+      - button "Continuar" [ref=f67e103] [cursor=pointer]
+      - generic [ref=f67e106]:
+        - button "Técnica" [ref=f67e107] [cursor=pointer]
+        - generic [ref=f67e110]:
+          - button "+10 s" [ref=f67e111] [cursor=pointer]
+          - button "Saltar" [ref=f67e112] [cursor=pointer]

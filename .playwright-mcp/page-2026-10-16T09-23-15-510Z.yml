@@ -1,0 +1,79 @@
+- generic [active] [ref=f9e1]:
+  - main [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - strong [ref=f9e4]: Figuras 3D
+      - combobox "Personaje" [ref=f9e5]:
+        - option "bro"
+        - option "chica" [selected]
+      - combobox "Ejercicio" [ref=f9e6]:
+        - option "Peso muerto con pesa rusa (kettlebell-deadlift)"
+        - option "Swing a dos manos (two-hand-swing)"
+        - option "Swing a una mano (one-arm-swing)"
+        - option "Peso muerto rumano a una pierna (single-leg-rdl)"
+        - option "Puente de glúteo (hip-bridge)"
+        - option "Sentadilla goblet (goblet-squat)" [selected]
+        - option "Sentadilla goblet con palanca (prying-goblet-squat)"
+        - option "Sentadilla frontal (front-squat)"
+        - option "Zancada hacia atrás con pesa en rack (reverse-lunge-racked)"
+        - option "Press estricto (strict-press)"
+        - option "Push press (push-press)"
+        - option "Press en el suelo (floor-press)"
+        - option "Press a media rodilla (half-kneeling-press)"
+        - option "Remo a una mano (one-arm-row)"
+        - option "Jalón alto (high-pull)"
+        - option "Cargada (clean)"
+        - option "Arranque (snatch)"
+        - option "Cargada y press (clean-and-press)"
+        - option "Levantamiento turco (turkish-get-up)"
+        - option "Molino (windmill)"
+        - option "Halo (halo)"
+        - option "Arm bar (arm-bar)"
+        - option "Press con pesa invertida (bottom-up-press)"
+        - option "Acarreo de maleta (suitcase-carry)"
+        - option "Acarreo en rack (rack-carry)"
+        - option "Paseo del granjero (farmer-carry)"
+        - option "Acarreo con pesa invertida (bottom-up-carry)"
+        - option "Acarreo del mesero (waiter-carry)"
+        - option "Ochos entre las piernas (figure-8)"
+      - combobox "Vista" [ref=f9e7]:
+        - option "vista por defecto" [selected]
+        - option "side"
+        - option "front"
+        - option "three-quarter"
+        - option "auto"
+        - option "angle"
+        - option "grados…"
+      - generic [ref=f9e8]:
+        - text: ritmo natural
+        - slider "Segundos por repetición" [ref=f9e9]: "0"
+      - group "Tinta del día" [ref=f9e10]:
+        - button "Tinta power" [ref=f9e11] [cursor=pointer]
+        - button "Tinta strength" [ref=f9e12] [cursor=pointer]
+        - button "Tinta endurance" [ref=f9e13] [cursor=pointer]
+        - button "Tinta hybrid" [ref=f9e14] [cursor=pointer]
+        - button "Tinta skill" [ref=f9e15] [cursor=pointer]
+        - button "Tinta recovery" [ref=f9e16] [cursor=pointer]
+      - button "derecha" [ref=f9e17] [cursor=pointer]
+      - button "izquierda" [ref=f9e18] [cursor=pointer]
+      - button "ambas" [ref=f9e19] [cursor=pointer]
+      - button "tono dark" [ref=f9e20] [cursor=pointer]
+      - button "suelo" [ref=f9e21] [cursor=pointer]
+      - button "pausar" [ref=f9e22] [cursor=pointer]
+      - button "mantener mirada" [ref=f9e23] [cursor=pointer]
+      - button "2D al lado" [ref=f9e24] [cursor=pointer]
+      - button "desmontar" [ref=f9e25] [cursor=pointer]
+      - button "montar/desmontar ×20" [ref=f9e26] [cursor=pointer]
+      - button "perder contexto (1,5 s)" [ref=f9e27] [cursor=pointer]
+    - region "Estado" [ref=f9e28]:
+      - generic [ref=f9e29]: estado -
+      - generic [ref=f9e30]: clip -
+      - generic [ref=f9e31]: rAF - fps
+      - generic [ref=f9e32]: dibujo - fps
+      - generic [ref=f9e33]: llamadas -
+      - generic [ref=f9e34]: triángulos -
+      - generic [ref=f9e35]: geometrías -
+      - generic [ref=f9e36]: texturas -
+      - generic [ref=f9e37]: dpr -
+      - generic [ref=f9e38]: gl - · pérdidas 0 · vistas 0
+    - 'img "Figura 3D animada: Sentadilla goblet" [ref=f9e41]'
+  - alert [ref=f9e44]

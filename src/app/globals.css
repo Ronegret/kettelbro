@@ -1,0 +1,618 @@
+@import "tailwindcss";
+
+/* ───────────────────────────────────────────────────────────────
+   RENDIMIENTO NOCTURNO — sistema de diseño de kettellbro
+   Ground: grafito casi negro. Acento: la tinta eléctrica del enfoque del día.
+   Tipografía: condensada deportiva en cursiva para titulares; sans de interfaz para todo lo demás.
+   Cada enfoque (focus) pinta TODA la pantalla de la sesión con su tinta.
+   ─────────────────────────────────────────────────────────────── */
+
+:root {
+  color-scheme: dark;
+
+  /* Ground */
+  --night: #0b0e14;
+  --night-2: #121722;
+  --night-3: #1b2230;
+  --seam: #2c3649;
+
+  /* Blanco frío (texto sobre noche) */
+  --paper: #f4f6fa;
+  --paper-dim: #b3bccd;
+  --paper-mute: #8392aa;
+
+  /* Frijoles */
+  --bean: #4b2f22;
+  --bean-hi: #9a6a48;
+
+  /* Tinta por defecto (si no hay enfoque) */
+  --ink: #f2432d;
+  --on-ink: #0b0e14;
+  --ink-lift: #ff7a62;
+  --ink-deep: #8f1d10;
+
+  /* Movimiento */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+  /* Geometría */
+  --radius-card: 18px;
+  --radius-ctl: 14px;
+  --tab-h: 68px;
+
+  /* Colores de la figura sobre el campo de tinta: el trazo noche no llega a 3:1 sobre el cobalto */
+  --fig-ink: var(--night);
+  --fig-bell: var(--paper);
+  --fig-detail: var(--ink-deep);
+
+  /* Tamaño de la figura del player: baja en teléfonos de poco alto */
+  --fig: min(54vw, 25dvh, 250px);
+}
+
+@media (max-height: 700px) {
+  :root {
+    --fig: min(46vw, 19dvh, 190px);
+  }
+}
+
+/* Tintas por enfoque. --ink = campo; --on-ink = texto sobre el campo;
+   --ink-lift = versión clara para acentos sobre noche; --ink-deep = sombra de impresión. */
+[data-focus="power"] {
+  --ink: #f2432d;
+  --on-ink: #0b0e14;
+  --ink-lift: #ff7a62;
+  --ink-deep: #8f1d10;
+}
+[data-focus="strength"] {
+  --fig-ink: var(--paper);
+  --fig-bell: var(--night);
+  --ink: #2a4de8;
+  --on-ink: #f4f6fa;
+  --ink-lift: #7d96ff;
+  --ink-deep: #14257f;
+}
+[data-focus="endurance"] {
+  --ink: #00a878;
+  --on-ink: #0b1a26;
+  --ink-lift: #3fdcae;
+  --ink-deep: #00583f;
+}
+[data-focus="hybrid"] {
+  --ink: #ffb41f;
+  --on-ink: #1a1230;
+  --ink-lift: #ffd067;
+  --ink-deep: #8a5a00;
+}
+[data-focus="skill"] {
+  --ink: #ff5fa2;
+  --on-ink: #2a0b1d;
+  --ink-lift: #ff9ac4;
+  --ink-deep: #8f1f58;
+}
+[data-focus="recovery"] {
+  --ink: #4fc9e8;
+  --on-ink: #0a1f2a;
+  --ink-lift: #8fe0f3;
+  --ink-deep: #1b6d85;
+}
+
+@theme inline {
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-night-3: var(--night-3);
+  --color-seam: var(--seam);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-paper-mute: var(--paper-mute);
+  --color-ink: var(--ink);
+  --color-on-ink: var(--on-ink);
+  --color-ink-lift: var(--ink-lift);
+  --color-ink-deep: var(--ink-deep);
+  --color-bean: var(--bean);
+  --font-slab: var(--font-display), "Arial Narrow", system-ui, sans-serif;
+  --font-num: var(--font-anybody), "Arial Narrow", system-ui, sans-serif;
+  --font-body: var(--font-body-sans), system-ui, sans-serif;
+}
+
+@layer base {
+  /* ───────────── Base de plataforma (mobile-native) ───────────── */
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior: none;
+    background: var(--night);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    overflow-x: clip;
+    background: var(--night);
+    color: var(--paper);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-optical-sizing: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    /* Solo se usan los pesos cargados: sin esto el navegador fabricaría negritas y cursivas borrosas */
+    font-synthesis: none;
+  }
+
+  button,
+  a,
+  [role="button"],
+  [role="tab"],
+  summary {
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  /* Superficies del navegador temadas con la paleta */
+  ::selection {
+    background: var(--ink);
+    color: var(--on-ink);
+  }
+  :focus-visible {
+    outline: 3px solid var(--ink-lift);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--seam) transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--seam);
+    border-radius: 8px;
+  }
+
+  }
+
+/* ───────────── Tipografía utilitaria ───────────── */
+
+/* Voz de titulares, nombres y botones: condensada, cursiva, en mayúsculas */
+.font-slab {
+  font-family: var(--font-slab);
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+.font-num {
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+}
+
+/* El peso de los números sube con el esfuerzo: --heat va de 0 a 1 */
+.heat-num {
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+  font-weight: calc(380 + var(--heat, 0) * 520);
+  font-stretch: calc(112% - var(--heat, 0) * 24%);
+  transition:
+    font-weight 0.6s var(--ease-out),
+    font-stretch 0.6s var(--ease-out);
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ───────────── Textura de impresión (estática, barata) ───────────── */
+
+.grain::after {
+  content: none;
+}
+
+/* ───────────── Safe areas ───────────── */
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ───────────── Interacción: feedback al presionar ───────────── */
+
+.press {
+  transition:
+    transform 120ms var(--ease-out),
+    filter 120ms var(--ease-out);
+}
+.press:active {
+  transform: scale(0.97);
+}
+@media (hover: hover) and (pointer: fine) {
+  .press:hover {
+    filter: brightness(1.08);
+  }
+}
+
+/* ───────────── Animaciones con nombre ───────────── */
+
+@keyframes ink-register {
+  0% {
+    transform: translate(-7px, 5px);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/* Reparto: la carta cae sobre la mesa y se asienta */
+@keyframes deal-in {
+  0% {
+    transform: translateY(46px) rotate(-5deg) scale(0.94);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bean-drop {
+  0% {
+    transform: translateY(-60px) scale(1.5) rotate(-30deg);
+    opacity: 0;
+  }
+  55% {
+    transform: translateY(0) scale(0.92) rotate(6deg);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-5px) scale(1.04) rotate(-3deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes stamp {
+  0% {
+    transform: scale(2.4) rotate(-14deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0.94) rotate(-6deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(-6deg);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-beat {
+  0% {
+    transform: scale(1);
+  }
+  18% {
+    transform: scale(1.045);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.08);
+  }
+}
+
+.rise {
+  animation: rise 0.32s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 55ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ───────────── Hoja inferior (dialog nativo) ─────────────
+   Entra y sale por el mismo borde: translateY(100%) del propio tamaño, curva de cajón, transiciones
+   (no keyframes) y display discreto para que la salida también se vea. Sin soporte → corte instantáneo. */
+dialog.sheet {
+  margin: auto 0 0;
+  width: 100%;
+  max-width: 28rem;
+  max-height: 88dvh;
+  inset-inline: 0;
+  margin-inline: auto;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  overflow: visible;
+  transition:
+    display 0.34s allow-discrete,
+    overlay 0.34s allow-discrete;
+}
+dialog.sheet::backdrop {
+  background: rgb(8 8 24 / 0.72);
+  opacity: 0;
+  transition:
+    opacity 0.28s var(--ease-out),
+    display 0.34s allow-discrete,
+    overlay 0.34s allow-discrete;
+}
+dialog.sheet[open]::backdrop {
+  opacity: 1;
+}
+dialog.sheet > .sheet-body {
+  border-top: 1px solid rgb(255 255 255 / 0.14);
+  transform: translateY(100%);
+  transition: transform 0.34s var(--ease-drawer);
+}
+dialog.sheet[open] > .sheet-body {
+  transform: translateY(0);
+}
+@starting-style {
+  dialog.sheet[open]::backdrop {
+    opacity: 0;
+  }
+  dialog.sheet[open] > .sheet-body {
+    transform: translateY(100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  dialog.sheet > .sheet-body {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  dialog.sheet[open] > .sheet-body {
+    opacity: 1;
+  }
+  @starting-style {
+    dialog.sheet[open] > .sheet-body {
+      opacity: 0;
+    }
+  }
+}
+
+/* ───────────── Microfeedback ───────────── */
+@keyframes num-pop {
+  0% {
+    transform: scale(1.14);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.num-pop {
+  animation: num-pop 0.14s var(--ease-out) both;
+}
+@keyframes tick-pulse {
+  0% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.tick-pulse {
+  animation: tick-pulse 0.22s var(--ease-out) both;
+}
+@keyframes cell-wave {
+  0% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Carta que gira (frente / reverso): ease-in-out porque se mueve en pantalla */
+.flip {
+  perspective: 1200px;
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s var(--ease-in-out);
+}
+.flip[data-flipped="true"] .flip-inner {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner {
+    transform-style: flat;
+    transition: none;
+  }
+  .flip[data-flipped="true"] .flip-inner {
+    transform: none;
+  }
+  .flip-face {
+    backface-visibility: visible;
+    transition: opacity 0.2s ease;
+  }
+  .flip-back {
+    transform: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .flip[data-flipped="true"] .flip-front {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .flip[data-flipped="true"] .flip-back {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@keyframes load-slide {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(330%);
+  }
+}
+
+/* ───── Portada pública ─────
+   La portada se renderiza en el servidor y es lo que ven buscadores y visitantes nuevos. Se oculta (sin retirarla del HTML)
+   en la app instalada, donde se muestra el acceso a pantalla completa, y mientras se comprueba la sesión de quien ya había
+   entrado, para que no haya un destello de portada antes de redirigirlo a Hoy. */
+@media (display-mode: standalone) {
+  .landing-root {
+    display: none;
+  }
+}
+html[data-returning="1"] .landing-root {
+  visibility: hidden;
+}
+
+/* ───── Texto largo de las guías públicas ───── */
+.prose-kb {
+  font-size: 17px;
+  line-height: 1.62;
+  color: var(--paper-dim);
+}
+.prose-kb > * + * {
+  margin-top: 1rem;
+}
+.prose-kb h2,
+.prose-kb h3 {
+  font-family: var(--font-slab);
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--paper);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+.prose-kb h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+}
+.prose-kb h3 {
+  font-size: 1.35rem;
+  margin-top: 1.75rem;
+}
+.prose-kb strong {
+  color: var(--paper);
+}
+.prose-kb a {
+  color: var(--paper);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-kb ul,
+.prose-kb ol {
+  padding-left: 1.4rem;
+}
+.prose-kb ul {
+  list-style: disc;
+}
+.prose-kb ol {
+  list-style: decimal;
+}
+.prose-kb li + li {
+  margin-top: 0.4rem;
+}
+.prose-kb blockquote {
+  border-left: 4px solid var(--paper-mute);
+  padding-left: 1rem;
+  color: var(--paper);
+}
+.prose-kb hr {
+  border: 0;
+  border-top: 1px solid var(--seam);
+  margin: 2rem 0;
+}
+.prose-kb .table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.prose-kb table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.prose-kb th,
+.prose-kb td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--seam);
+}
+.prose-kb th {
+  color: var(--paper);
+  font-weight: 700;
+}

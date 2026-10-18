@@ -1,0 +1,9 @@
+- generic [active] [ref=f56e1]:
+  - main [ref=f56e2]:
+    - paragraph [ref=f56e3]: bro · fase 0.75 · 420px · 2 ejercicios
+    - generic [ref=f56e4]:
+      - figure "Swing a dos manos" [ref=f56e5]:
+        - 'img "Figura 3D animada: Swing a dos manos" [ref=f56e7]'
+      - figure "Halo" [ref=f56e12]:
+        - 'img "Figura 3D animada: Halo" [ref=f56e14]'
+  - alert [ref=f56e19]

@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - strong [ref=e4]: Figuras 3D
+      - combobox "Personaje" [ref=e5]:
+        - option "bro" [selected]
+        - option "chica"
+      - combobox "Ejercicio" [ref=e6]:
+        - option "Peso muerto con pesa rusa (kettlebell-deadlift)"
+        - option "Swing a dos manos (two-hand-swing)"
+        - option "Swing a una mano (one-arm-swing)"
+        - option "Peso muerto rumano a una pierna (single-leg-rdl)"
+        - option "Puente de glúteo (hip-bridge)"
+        - option "Sentadilla goblet (goblet-squat)" [selected]
+        - option "Sentadilla goblet con palanca (prying-goblet-squat)"
+        - option "Sentadilla frontal (front-squat)"
+        - option "Zancada hacia atrás con pesa en rack (reverse-lunge-racked)"
+        - option "Press estricto (strict-press)"
+        - option "Push press (push-press)"
+        - option "Press en el suelo (floor-press)"
+        - option "Press a media rodilla (half-kneeling-press)"
+        - option "Remo a una mano (one-arm-row)"
+        - option "Jalón alto (high-pull)"
+        - option "Cargada (clean)"
+        - option "Arranque (snatch)"
+        - option "Cargada y press (clean-and-press)"
+        - option "Levantamiento turco (turkish-get-up)"
+        - option "Molino (windmill)"
+        - option "Halo (halo)"
+        - option "Arm bar (arm-bar)"
+        - option "Press con pesa invertida (bottom-up-press)"
+        - option "Acarreo de maleta (suitcase-carry)"
+        - option "Acarreo en rack (rack-carry)"
+        - option "Paseo del granjero (farmer-carry)"
+        - option "Acarreo con pesa invertida (bottom-up-carry)"
+        - option "Acarreo del mesero (waiter-carry)"
+        - option "Ochos entre las piernas (figure-8)"
+      - combobox "Vista" [ref=e7]:
+        - option "vista por defecto"
+        - option "side" [selected]
+        - option "front"
+        - option "three-quarter"
+        - option "auto"
+        - option "angle"
+        - option "grados…"
+      - generic [ref=e8]:
+        - text: ritmo natural
+        - slider "Segundos por repetición" [ref=e9]: "0"
+      - group "Tinta del día" [ref=e10]:
+        - button "Tinta power" [ref=e11] [cursor=pointer]
+        - button "Tinta strength" [ref=e12] [cursor=pointer]
+        - button "Tinta endurance" [ref=e13] [cursor=pointer]
+        - button "Tinta hybrid" [ref=e14] [cursor=pointer]
+        - button "Tinta skill" [ref=e15] [cursor=pointer]
+        - button "Tinta recovery" [ref=e16] [cursor=pointer]
+      - button "derecha" [ref=e17] [cursor=pointer]
+      - button "izquierda" [ref=e18] [cursor=pointer]
+      - button "ambas" [ref=e19] [cursor=pointer]
+      - button "tono dark" [ref=e20] [cursor=pointer]
+      - button "suelo" [ref=e21] [cursor=pointer]
+      - button "pausar" [ref=e22] [cursor=pointer]
+      - button "mantener mirada" [ref=e23] [cursor=pointer]
+      - button "2D al lado" [ref=e24] [cursor=pointer]
+      - button "desmontar" [ref=e25] [cursor=pointer]
+      - button "montar/desmontar ×20" [ref=e26] [cursor=pointer]
+      - button "perder contexto (1,5 s)" [ref=e27] [cursor=pointer]
+    - region "Estado" [ref=e28]:
+      - generic [ref=e29]: estado ready
+      - generic [ref=e30]: clip goblet-squat
+      - generic [ref=e31]: rAF 63 fps
+      - generic [ref=e32]: dibujo 60 fps
+      - generic [ref=e33]: llamadas 22
+      - generic [ref=e34]: triángulos 13524
+      - generic [ref=e35]: geometrías 13
+      - generic [ref=e36]: texturas 2
+      - generic [ref=e37]: dpr 1.25
+      - generic [ref=e38]: gl ok · pérdidas 0 · vistas 1
+      - generic [ref=e44]: ANGLE (AMD, AMD Radeon(TM) 610M (0x0000164E) Direct3D11 vs_5_0 ps_5_0, D3D11)
+    - 'img "Figura 3D animada: Sentadilla goblet" [ref=e41]'
+  - alert [ref=e48]

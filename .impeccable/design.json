@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T00:00:00Z",
+  "title": "Design System: kettellbro",
+  "extensions": {
+    "colorMeta": {
+      "night": { "role": "neutral", "displayName": "Noche Índigo", "canonical": "#11122a", "tonalRamp": ["#11122a", "#181a3c", "#21244f", "#353a78", "#5b5f9a", "#8d90bd", "#bcbad3", "#f4efe2"] },
+      "paper": { "role": "neutral", "displayName": "Papel de Carta", "canonical": "#f4efe2", "tonalRamp": ["#4a4958", "#77757d", "#a5a2a2", "#d2cec6", "#f4efe2", "#f6f2e8", "#f9f6ef", "#fcfbf8"] },
+      "vermilion": { "role": "primary", "displayName": "Bermellón (potencia, tinta por defecto)", "canonical": "#f2432d", "onInk": "#11122a", "tonalRamp": ["#491e2b", "#76282b", "#a3322c", "#d03c2d", "#f2432d", "#f56957", "#f8988c", "#fcd0cb"] },
+      "cobalt": { "role": "secondary", "displayName": "Cobalto (fuerza)", "canonical": "#2a4de8", "onInk": "#f4efe2", "tonalRamp": ["#17215a", "#1c2d7f", "#2138a6", "#2644cc", "#2a4de8", "#5571ed", "#8a9df2", "#cad3f9"] },
+      "jade": { "role": "secondary", "displayName": "Jade (resistencia)", "canonical": "#00a878", "onInk": "#0b1a26", "tonalRamp": ["#0d383e", "#09564d", "#06745d", "#03926c", "#00a878", "#33b993", "#73cfb5", "#bfe9dd"] },
+      "marigold": { "role": "secondary", "displayName": "Caléndula (híbrido)", "canonical": "#ffb41f", "onInk": "#1a1230", "tonalRamp": ["#4d3b27", "#7c5b25", "#ac7b23", "#db9c21", "#ffb41f", "#ffc34c", "#ffd684", "#ffecc7"] },
+      "rose": { "role": "secondary", "displayName": "Rosa (técnica)", "canonical": "#ff5fa2", "onInk": "#2a0b1d", "tonalRamp": ["#4d2548", "#7c3560", "#ac4478", "#db5390", "#ff5fa2", "#ff7fb5", "#ffa7cc", "#ffd7e8"] },
+      "aqua": { "role": "secondary", "displayName": "Aqua (recuperación)", "canonical": "#4fc9e8", "onInk": "#0a1f2a", "tonalRamp": ["#21405a", "#2d647f", "#3989a6", "#46aecc", "#4fc9e8", "#72d4ed", "#9ee1f2", "#d3f2f9"] },
+      "bean": { "role": "tertiary", "displayName": "Frijol", "canonical": "#4b2f22", "tonalRamp": ["#1f130d", "#33200f", "#4b2f22", "#6b452f", "#9a6a48", "#b98963", "#d3ac8a", "#ecd4bf"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Mensaje monumental", "purpose": "Un solo mensaje por paso del player, en slab de madera." },
+      "headline": { "displayName": "Saludo", "purpose": "Titular de Hoy." },
+      "title": { "displayName": "Título de sección", "purpose": "Encabezados, nombre de carta, hojas." },
+      "numeral": { "displayName": "Numeral variable", "purpose": "Datos y cronómetros; el peso y el ancho siguen --heat (esfuerzo)." },
+      "body": { "displayName": "Texto", "purpose": "Descripciones, razones y cues." },
+      "label": { "displayName": "Etiqueta de acción", "purpose": "Botones y pastillas, mayúsculas con 0.06em." }
+    },
+    "shadows": [
+      { "name": "card", "value": "0 28px 48px -22px rgba(0,0,0,0.75)", "purpose": "Asienta la carta del día sobre la mesa." },
+      { "name": "banner", "value": "0 6px 14px -8px rgba(0,0,0,0.5)", "purpose": "Banner de papel del nombre." },
+      { "name": "button-ink", "value": "0 10px 28px -10px var(--ink-deep)", "purpose": "Botón primario de tinta." },
+      { "name": "button-paper", "value": "0 10px 28px -12px rgba(0,0,0,0.6)", "purpose": "Botón papel." },
+      { "name": "sheet", "value": "0 -20px 60px -20px rgba(0,0,0,0.8)", "purpose": "Hoja inferior." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Curva general: reparto, registro, hoja, subida." },
+      { "name": "ease-snap", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Perilla del interruptor." },
+      { "name": "deal-in", "value": "0.7s ease-out: translateY(46px) rotate(-5deg) scale(.94) a reposo", "purpose": "La carta cae sobre la mesa." },
+      { "name": "ink-register", "value": "0.9s ease-out: translate(-7px, 5px) a 0", "purpose": "El campo de tinta se registra sobre el papel." },
+      { "name": "bean-drop", "value": "0.8s ease-out", "purpose": "El frijol se coloca en un día cumplido." },
+      { "name": "stamp", "value": "scale 2.4 a 1, rotate -14 a -6deg", "purpose": "Sello de ¡Lotería!." },
+      { "name": "press", "value": "120ms scale(0.97)", "purpose": "Retroalimentación al presionar." },
+      { "name": "reduced-motion", "value": "duraciones a 0.01ms", "purpose": "Respeto a prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "short-phone", "value": "max-height: 700px" },
+      { "name": "tab-bar-frame", "value": "md (borde lateral y radio superior en la barra)" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón papel (acción dominante)",
+      "kind": "button",
+      "refersTo": "button-paper",
+      "description": "EMPEZAR y HECHO sobre un campo de tinta.",
+      "html": "<div class=\"ds-field\"><button class=\"ds-btn-paper\">EMPEZAR</button></div>",
+      "css": ".ds-field{background:#f2432d;padding:20px;border-radius:18px}.ds-btn-paper{width:100%;height:64px;border:0;border-radius:18px;background:#f4efe2;color:#11122a;font-family:'Alfa Slab One',Rockwell,Georgia,serif;font-size:18px;text-transform:uppercase;letter-spacing:.06em;box-shadow:0 10px 28px -12px rgba(0,0,0,.6);cursor:pointer;transition:transform 120ms cubic-bezier(.16,1,.3,1),filter 120ms}.ds-btn-paper:hover{filter:brightness(1.08)}.ds-btn-paper:active{transform:scale(.97)}.ds-btn-paper:focus-visible{outline:3px solid #ff7a62;outline-offset:3px}"
+    },
+    {
+      "name": "Botón de tinta",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción primaria sobre noche, con la tinta del día.",
+      "html": "<button class=\"ds-btn-ink\">Guardar</button>",
+      "css": ".ds-btn-ink{height:48px;padding:0 20px;border:0;border-radius:14px;background:var(--ink,#f2432d);color:var(--on-ink,#11122a);font-family:'Alfa Slab One',Rockwell,Georgia,serif;font-size:15px;text-transform:uppercase;letter-spacing:.06em;box-shadow:0 10px 28px -10px var(--ink-deep,#8f1d10);cursor:pointer;transition:transform 120ms cubic-bezier(.16,1,.3,1),filter 120ms}.ds-btn-ink:hover{filter:brightness(1.08)}.ds-btn-ink:active{transform:scale(.97)}.ds-btn-ink:focus-visible{outline:3px solid var(--ink-lift,#ff7a62);outline-offset:3px}"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción alternativa sobre noche.",
+      "html": "<button class=\"ds-btn-sec\">Sigo con las mismas</button>",
+      "css": ".ds-btn-sec{height:48px;padding:0 20px;border:2px solid rgba(244,239,226,.25);border-radius:14px;background:rgba(24,26,60,.6);color:#f4efe2;font-family:'Alfa Slab One',Rockwell,Georgia,serif;font-size:15px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer}.ds-btn-sec:hover{filter:brightness(1.08)}.ds-btn-sec:active{transform:scale(.97)}.ds-btn-sec:focus-visible{outline:3px solid #ff7a62;outline-offset:3px}"
+    },
+    {
+      "name": "La carta del día",
+      "kind": "card",
+      "refersTo": "loteria-card",
+      "description": "Carta coleccionable: marco de papel, campo de tinta, número, pastilla de enfoque, banner de nombre.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-field\"><span class=\"ds-card-num\">12</span><span class=\"ds-card-focus\">Potencia</span><div class=\"ds-card-banner\">EL SWING</div></div></div>",
+      "css": ".ds-card{position:relative;width:240px;aspect-ratio:5/7.1;padding:9px;border-radius:20px;background:#f4efe2;box-shadow:0 28px 48px -22px rgba(0,0,0,.75)}.ds-card-field{position:relative;width:100%;height:100%;overflow:hidden;border-radius:13px;background:#f2432d;color:#11122a}.ds-card-num{position:absolute;left:14px;top:10px;font-family:Anybody,'Arial Narrow',system-ui,sans-serif;font-variant-numeric:tabular-nums;font-weight:700;font-size:56px;line-height:1}.ds-card-focus{position:absolute;right:12px;top:16px;padding:4px 12px;border:2px solid rgba(17,18,42,.7);border-radius:9999px;font-family:'Alfa Slab One',Rockwell,Georgia,serif;font-size:13px;text-transform:uppercase;letter-spacing:.06em}.ds-card-banner{position:absolute;left:10px;right:10px;bottom:10px;padding:10px 8px;border-radius:10px;background:#f4efe2;color:#11122a;text-align:center;font-family:'Alfa Slab One',Rockwell,Georgia,serif;font-size:22px;letter-spacing:.04em;box-shadow:0 6px 14px -8px rgba(0,0,0,.5)}"
+    },
+    {
+      "name": "Tabla del mes (fila)",
+      "kind": "custom",
+      "refersTo": "tabla-panel",
+      "description": "Minicartas con campo de tinta; cumplidas con frijol, futuras en tinta profunda.",
+      "html": "<div class=\"ds-tabla\"><div class=\"ds-row\"><div class=\"ds-cell done\">1<svg class=\"ds-bean\" viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><ellipse cx=\"12\" cy=\"12\" rx=\"9\" ry=\"6.2\" transform=\"rotate(-24 12 12)\" fill=\"#4b2f22\" stroke=\"#11122a\" stroke-width=\"1.4\"/><path d=\"M7.5 10.5c1.6-2 4.2-2.8 6.6-2.3\" fill=\"none\" stroke=\"#9a6a48\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg></div><div class=\"ds-cell today\">2</div><div class=\"ds-cell\">3</div><div class=\"ds-cell\">4</div></div></div>",
+      "css": ".ds-tabla{padding:16px;border-radius:20px;background:#181a3c;width:260px}.ds-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.ds-cell{position:relative;aspect-ratio:4/5;border:2.5px solid rgba(244,239,226,.35);border-radius:8px;background:#8f1d10;color:rgba(244,239,226,.75);font-family:Anybody,'Arial Narrow',system-ui,sans-serif;font-weight:800;font-size:14px;padding:2px 4px;box-sizing:border-box}.ds-cell.done,.ds-cell.today{border-color:#f4efe2;background:#f2432d;color:#11122a}.ds-cell.today{outline:3px solid #ff7a62;outline-offset:2px}.ds-bean{position:absolute;left:50%;top:50%;transform:translate(-50%,-58%)}"
+    },
+    {
+      "name": "Opción de selección",
+      "kind": "chip",
+      "refersTo": "option-card",
+      "description": "Tarjeta-opción de selección única.",
+      "html": "<button class=\"ds-opt\" aria-checked=\"true\"><span class=\"ds-opt-dot\"></span><span><span class=\"ds-opt-t\">Fuerza</span><span class=\"ds-opt-d\">Pesos más altos, menos repeticiones.</span></span></button>",
+      "css": ".ds-opt{display:flex;gap:12px;align-items:flex-start;width:300px;padding:14px 16px;border:2px solid #f2432d;border-radius:16px;background:rgba(242,67,45,.15);color:#f4efe2;text-align:left;cursor:pointer}.ds-opt-dot{margin-top:4px;width:24px;height:24px;border-radius:9999px;background:#f2432d;border:2px solid #f2432d;flex:none}.ds-opt-t{display:block;font-family:'Alfa Slab One',Rockwell,Georgia,serif;font-size:19px}.ds-opt-d{display:block;margin-top:2px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:14.5px;color:#bcbad3}.ds-opt:focus-visible{outline:3px solid #ff7a62;outline-offset:3px}"
+    },
+    {
+      "name": "Campo numérico",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Campo de peso en kg.",
+      "html": "<input class=\"ds-input\" inputmode=\"decimal\" placeholder=\"kg\" />",
+      "css": ".ds-input{height:48px;width:200px;padding:0 16px;border:2px solid #353a78;border-radius:14px;background:#181a3c;color:#f4efe2;font-family:Anybody,'Arial Narrow',system-ui,sans-serif;font-weight:700;font-size:20px}.ds-input::placeholder{color:#8d90bd}.ds-input:focus{border-color:#ff7a62;outline:none}"
+    },
+    {
+      "name": "Barra de pestañas",
+      "kind": "nav",
+      "refersTo": "tab-bar",
+      "description": "Cuatro destinos; el activo con la tinta clara del día.",
+      "html": "<nav class=\"ds-tabs\"><a class=\"ds-tab on\">Hoy</a><a class=\"ds-tab\">Progreso</a><a class=\"ds-tab\">Metas</a><a class=\"ds-tab\">Perfil</a></nav>",
+      "css": ".ds-tabs{display:grid;grid-template-columns:repeat(4,1fr);width:340px;border-top:3px solid rgba(244,239,226,.25);background:rgba(24,26,60,.95)}.ds-tab{position:relative;display:flex;align-items:center;justify-content:center;height:68px;color:#8d90bd;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:13px;font-weight:500}.ds-tab.on{color:#ff7a62}.ds-tab.on::before{content:'';position:absolute;top:0;width:40px;height:3px;border-radius:0 0 9999px 9999px;background:#ff7a62}"
+    },
+    {
+      "name": "Chip del player",
+      "kind": "chip",
+      "refersTo": "player-chip",
+      "description": "Pastilla de noche translúcida sobre el campo de tinta del player.",
+      "html": "<div class=\"ds-player\"><span class=\"ds-pchip\">Izquierda</span></div>",
+      "css": ".ds-player{padding:24px;background:#2a4de8;border-radius:18px}.ds-pchip{display:inline-block;padding:4px 16px;border-radius:9999px;background:rgba(17,18,42,.45);color:#f4efe2;font-family:Anybody,'Arial Narrow',system-ui,sans-serif;font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.06em}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La Lotería de Hierro",
+    "overview": "Una noche índigo sobre la que cada día se reparte como una carta de lotería coleccionable: borde de papel, campo de tinta plana, número en la esquina, nombre en slab de madera. Seis tintas de cromolitografía, una por enfoque, se usan como campos enteros: el enfoque del día reescribe --ink, --on-ink, --ink-lift y --ink-deep en la raíz y tiñe barra inferior, hojas, botones y player. El mes es una tabla de 4 x 7 de minicartas; cada día cumplido recibe un frijol.\n\nLa densidad es de teléfono apoyado a distancia: un solo mensaje monumental por paso, controles de 48 a 64 px, números tabulares que engordan con el esfuerzo. El tono material es de impreso: tintas planas, grano multiplicado, rayos de grabado en dos tintas, segunda plancha desfasada como mal registro. No hay degradados de color ni anillos de progreso.",
+    "keyCharacteristics": [
+      "Fondo noche fijo; el color vive en campos de tinta enteros, uno por enfoque, elegido por data-focus.",
+      "Papel (#f4efe2) como marco de carta, banner de nombre y botón principal sobre campo de tinta.",
+      "Tres voces: slab de madera (Alfa Slab One), grotesca variable (Anybody) para números, Bricolage Grotesque para texto.",
+      "Frijol como única forma orgánica; todo lo demás es geometría de imprenta.",
+      "Movimiento con nombre: reparto, registro de tinta, caída de frijol, sello."
+    ],
+    "rules": [
+      { "name": "The Day-Ink Rule", "body": "Todo color de acento se lee de --ink, --on-ink, --ink-lift o --ink-deep; ningún componente fija una tinta de enfoque. Excepción: señales (llama de racha, advertencia, error).", "section": "colors" },
+      { "name": "The Flat Field Rule", "body": "La tinta se usa como campo plano entero. Rayos y sombras de impresión son formas planas de --ink-deep, nunca degradados.", "section": "colors" },
+      { "name": "The Deep Under Paper Rule", "body": "Texto sobre --ink-deep es papel; texto sobre --ink es --on-ink. No mezclar.", "section": "colors" },
+      { "name": "The Weight Is Effort Rule", "body": "Los números de datos viven en Anybody con --heat; un número que representa esfuerzo no se fija en un peso estático.", "section": "typography" },
+      { "name": "The One Slab Voice Rule", "body": "El slab es para nombres, acciones y titulares; el texto corrido nunca va en slab.", "section": "typography" },
+      { "name": "The Misregistration Rule", "body": "El desfase de tinta existe solo como forma SVG en figuras y mascota; las superficies de interfaz no llevan sombras duras desplazadas.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do leer toda tinta de acento desde --ink, --on-ink, --ink-lift, --ink-deep y envolver la pantalla en data-focus.",
+      "Do poner texto de papel sobre --ink-deep y --on-ink sobre --ink; usar --ink-lift para texto y acentos sobre noche.",
+      "Do usar Alfa Slab One para nombres, titulares y botones, y Anybody con --heat para cualquier número de datos.",
+      "Do mantener objetivos táctiles de al menos 44px (48 y 64px para acciones) y un único mensaje dominante por pantalla de player.",
+      "Do dibujar iconos propios de trazo de 2px; respetar prefers-reduced-motion.",
+      "Do dibujar figuras sobre campo de cobalto en papel (--fig-ink) porque el trazo noche no alcanza 3:1 allí."
+    ],
+    "donts": [
+      "Don't usar anillos de progreso, lima neón ni tarjetas redondeadas genéricas como estética por defecto.",
+      "Don't rellenar campos de tinta con degradados de color; el volumen se da con planchas planas de --ink-deep.",
+      "Don't fijar un color de enfoque en un componente; solo las señales usan colores propios.",
+      "Don't usar slab para texto corrido ni fijar peso estático en números que expresan esfuerzo.",
+      "Don't añadir sombras duras desplazadas a superficies de interfaz; el mal registro es solo del arte.",
+      "Don't usar emoji ni glifos Unicode como iconos."
+    ]
+  }
+}

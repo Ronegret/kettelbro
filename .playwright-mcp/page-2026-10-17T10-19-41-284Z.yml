@@ -1,0 +1,8 @@
+- generic [active] [ref=f64e1]:
+  - main [ref=f64e2]:
+    - generic [ref=f64e3]:
+      - img "El Bro, la pesa rusa mascota (hype)" [ref=f64e5]
+      - generic [ref=f64e21]: KETTELLBRO
+      - paragraph [ref=f64e24]: Una carta nueva cada día.
+      - paragraph [ref=f64e26]: Cargando tu historial…
+  - alert [ref=f64e27]

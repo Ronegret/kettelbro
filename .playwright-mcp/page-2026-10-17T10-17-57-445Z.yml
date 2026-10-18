@@ -1,0 +1,13 @@
+- generic [active] [ref=f60e1]:
+  - main [ref=f60e2]:
+    - paragraph [ref=f60e3]: bro · fase 0.4 · 300px · 4 ejercicios
+    - generic [ref=f60e4]:
+      - figure "Puente de glúteo" [ref=f60e5]:
+        - 'img "Figura 3D animada: Puente de glúteo" [ref=f60e7]'
+      - figure "Press en el suelo" [ref=f60e11]:
+        - 'img "Figura 3D animada: Press en el suelo" [ref=f60e13]'
+      - figure "Levantamiento turco" [ref=f60e17]:
+        - 'img "Figura 3D animada: Levantamiento turco" [ref=f60e19]'
+      - figure "Arm bar" [ref=f60e23]:
+        - 'img "Figura 3D animada: Arm bar" [ref=f60e25]'
+  - alert [ref=f60e29]
